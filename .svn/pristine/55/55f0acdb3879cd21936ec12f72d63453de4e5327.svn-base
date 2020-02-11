@@ -1,0 +1,512 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package nehemie_mutuelle;
+ import java.awt.BorderLayout ;
+    import java.awt.Color ;
+    import java.awt.Dimension ;
+    import java.awt.GridLayout ;
+    import java.awt.event.ActionEvent ;
+    import java.awt.event.ActionListener ;
+import java.util.ArrayList;
+import java.util.List;
+
+    import javax.swing.JButton ;
+    import javax.swing.JDialog ;
+    import javax.swing.JFrame ;
+    import javax.swing.JLabel ;
+    import javax.swing.JPanel ;
+
+/**
+ *
+ * @author elommarcarnold
+ */
+public class Tontinedata extends javax.swing.JFrame {
+
+    /**
+     * Creates new form Tontinedata
+     */
+    public Tontinedata() {
+        initComponents();
+    }
+
+   
+
+    /**
+     * @see @author @author Seahawks
+     * @version 1.0
+     */
+    public static class Calendarium {
+
+        int month = java.util.Calendar.getInstance().get(java.util.Calendar.MONTH);
+        int year = java.util.Calendar.getInstance().get(java.util.Calendar.YEAR);
+        ;
+        JLabel l = new JLabel("", JLabel.CENTER);
+        String day = "";
+        JDialog d;
+    //    JButton[] button = new JButton[49];
+        JButton[] button = new JButton[31];
+        public Calendarium(JFrame parent) {
+            d = new JDialog();
+            d.setModal(true);
+            String[] header = {"Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"};
+            JPanel p1 = new JPanel(new GridLayout(7, 5));
+            p1.setPreferredSize(new Dimension(430, 120));
+
+            for (int x = 0; x < button.length; x++) {
+                final int selection = x;
+                button[x] = new JButton();
+                button[x].setFocusPainted(false);
+                button[x].setBackground(Color.white);
+                if (x > 6) {
+                    button[x].addActionListener(new ActionListener() {
+                        public void actionPerformed(ActionEvent ae) {
+                            day = button[selection].getActionCommand();
+                            d.dispose();
+                        }
+                    });
+                }
+                if (x < 7) {
+                    button[x].setText(header[x]);
+                    button[x].setForeground(Color.red);
+                }
+                p1.add(button[x]);
+            }
+            JPanel p2 = new JPanel(new GridLayout(1, 3));
+            JButton previous = new JButton("<< Previous");
+            previous.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent ae) {
+                    month--;
+                    displayDate();
+                }
+            });
+            p2.add(previous);
+            p2.add(l);
+            JButton next = new JButton("Next >>");
+            next.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent ae) {
+                    month++;
+                    displayDate();
+                }
+            });
+            p2.add(next);
+            d.add(p1, BorderLayout.CENTER);
+            d.add(p2, BorderLayout.SOUTH);
+            d.pack();
+            d.setLocationRelativeTo(parent);
+            displayDate();
+            d.setVisible(true);
+        }
+
+        /**
+         * @see how calendar works
+         * @param panel_ins : instance of a panel
+         *
+         *
+         * Description : This constructor is call the calendar
+         *         * 
+Date : Nov 8, 2011
+         *         * 
+Coded by : belazy..
+         */
+        public Calendarium(JPanel panel_ins) {
+            //d = new JDialog();
+           // d.setModal(true);
+            String[] header = {"Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"};
+            JPanel p1 = new JPanel(new GridLayout(7, 7));
+            p1.setPreferredSize(new Dimension(430, 120));
+
+            for (int x = 0; x < button.length; x++) {
+                final int selection = x;
+                button[x] = new JButton();
+                button[x].setFocusPainted(false);
+                button[x].setBackground(Color.white);
+                if (x > 6) {
+                    button[x].addActionListener(new ActionListener() {
+                        public void actionPerformed(ActionEvent ae) {
+                            day = button[selection].getActionCommand();
+                          //  d.dispose();
+                        }
+                    });
+                }
+                if (x < 7) {
+                    button[x].setText(header[x]);
+                    button[x].setForeground(Color.red);
+                }
+                p1.add(button[x]);
+            }
+            JPanel p2 = new JPanel(new GridLayout(1, 3));
+            JButton previous = new JButton("<< Previous");
+            previous.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent ae) {
+                    month--;
+                    displayDate();
+                }
+            });
+            p2.add(previous);
+            p2.add(l);
+            JButton next = new JButton("Next >>");
+            next.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent ae) {
+                    month++;
+                    displayDate();
+                }
+            });
+            p2.add(next);
+//            d.add(p1, BorderLayout.CENTER);
+//            d.add(p2, BorderLayout.SOUTH);
+//            d.pack();
+//            d.setLocationRelativeTo(panel_ins);
+//            displayDate();
+//            d.setVisible(true);
+            
+            panel_ins.add(p1, BorderLayout.CENTER);
+            panel_ins.add(p2, BorderLayout.SOUTH);
+            //panel_ins.pack();
+           // d.setLocationRelativeTo(panel_ins);
+            displayDate();
+            panel_ins.setVisible(true);
+        }
+
+        public void displayDate() {
+//            for (int x = 7; x < button.length; x++) {
+//                button[x].setText("");
+//            }
+            java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat(
+                    "MMMM yyyy");
+            java.util.Calendar cal = java.util.Calendar.getInstance();
+            cal.set(year, month, 1);
+//            int dayOfWeek = cal.get(java.util.Calendar.DAY_OF_WEEK);
+//            int daysInMonth = cal.getActualMaximum(java.util.Calendar.DAY_OF_MONTH);
+//            for (int x = 6 + dayOfWeek, day = 1; day <= daysInMonth; x++, day++) {
+//                button[x].setText("" + day);
+//            }
+            
+            for (int i=1; i<32; i++) {
+                button[i-1].setText("" + i);
+            }
+            l.setText(sdf.format(cal.getTime()));
+//            d.setTitle("CALENDAR");
+        }
+        
+        public JPanel CalendariumP1() {
+            //d = new JDialog();
+           // d.setModal(true);
+            String[] header = {"Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"};
+            JPanel p1 = new JPanel(new GridLayout(7, 7));
+            p1.setPreferredSize(new Dimension(430, 120));
+
+            for (int x = 0; x < button.length; x++) {
+                final int selection = x;
+                button[x] = new JButton();
+                button[x].setFocusPainted(false);
+                button[x].setBackground(Color.white);
+                
+                button[x].addActionListener(new ActionListener() {
+                        public void actionPerformed(ActionEvent ae) {
+                              day = button[selection].getActionCommand();
+                               button[selection].setBackground(Color.yellow);
+                        }
+                    });
+                
+                
+                
+//                if (x > 6) {
+//                    button[x].addActionListener(new ActionListener() {
+//                        public void actionPerformed(ActionEvent ae) {
+//                            day = button[selection].getActionCommand();
+//                          //  d.dispose();
+//                        }
+//                    });
+//                }
+                if (x < 7) {
+                    button[x].setText(header[x]);
+                    button[x].setForeground(Color.red);
+                }
+                p1.add(button[x]);
+            }
+            JPanel p2 = new JPanel(new GridLayout(1, 3));
+            JButton previous = new JButton("<< Previous");
+            previous.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent ae) {
+                    month--;
+                    displayDate();
+                }
+            });
+            p2.add(previous);
+            p2.add(l);
+            JButton next = new JButton("Next >>");
+            next.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent ae) {
+                    month++;
+                    displayDate();
+                }
+            });
+            p2.add(next);
+//            d.add(p1, BorderLayout.CENTER);
+//            d.add(p2, BorderLayout.SOUTH);
+//            d.pack();
+//            d.setLocationRelativeTo(panel_ins);
+//            displayDate();
+//            d.setVisible(true);
+            
+        //    panel_ins.add(p1, BorderLayout.CENTER);
+         //   panel_ins.add(p2, BorderLayout.SOUTH);
+            //panel_ins.pack();
+           // d.setLocationRelativeTo(panel_ins);
+            displayDate();
+            return p1;
+        }
+        
+        public ArrayList<JPanel> CalendariumP2() {
+            //d = new JDialog();
+           // d.setModal(true);
+            String[] header = {"Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"};
+            JPanel p1 = new JPanel(new GridLayout(7, 7));
+            p1.setPreferredSize(new Dimension(430, 120));
+
+            for (int x = 0; x < button.length; x++) {
+                final int selection = x;
+                button[x] = new JButton();
+                button[x].setFocusPainted(false);
+                button[x].setBackground(Color.white);
+       //         if (x > 6) {
+                    button[x].addActionListener(new ActionListener() {
+                        public void actionPerformed(ActionEvent ae) {
+                            day = button[selection].getActionCommand();
+                            if (button[selection].getBackground() != Color.yellow) {
+                            button[selection].setBackground(Color.yellow);
+                            }else {
+                            button[selection].setBackground(Color.white);
+    
+                            }
+                          //  d.dispose();
+                        }
+                    });
+       //         }
+                if (x < 1) {
+                    button[x].setText(header[x]);
+                    button[x].setForeground(Color.red);
+                }
+                p1.add(button[x]);
+            }
+            JPanel p2 = new JPanel(new GridLayout(1, 3));
+            JButton previous = new JButton("<< Précédent");
+            previous.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent ae) {
+                    month--;
+                    displayDate();
+                }
+            });
+            p2.add(previous);
+            p2.add(l);
+            JButton next = new JButton("Suivant >>");
+            next.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent ae) {
+                    month++;
+                    displayDate();
+                }
+            });
+            p2.add(next);
+//            d.add(p1, BorderLayout.CENTER);
+//            d.add(p2, BorderLayout.SOUTH);
+//            d.pack();
+//            d.setLocationRelativeTo(panel_ins);
+//            displayDate();
+//            d.setVisible(true);
+            
+        //    panel_ins.add(p1, BorderLayout.CENTER);
+         //   panel_ins.add(p2, BorderLayout.SOUTH);
+            //panel_ins.pack();
+           // d.setLocationRelativeTo(panel_ins);
+            displayDate();
+            ArrayList <JPanel> panelList = new ArrayList<JPanel>();
+            panelList.add(p1);
+            panelList.add(p2);
+            return panelList;
+        }
+        
+
+        public String setPickedDate() {
+            if (day.equals("")) {
+                return day;
+            }
+            java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat(
+                    "dd-MM-yyyy");
+            java.util.Calendar cal = java.util.Calendar.getInstance();
+            cal.set(year, month, Integer.parseInt(day));
+            return sdf.format(cal.getTime());
+        }
+        
+        public void selectAll() {
+            for (int x = 0; x < button.length; x++) {
+                  button[x].setBackground(Color.yellow);
+            }
+        }
+        
+        public void UnselectAll() {
+            for (int x = 0; x < button.length; x++) {
+                  button[x].setBackground(Color.white);
+            }
+        }
+    }
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        jPanel1 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jSeparator1 = new javax.swing.JSeparator();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jCheckBox1 = new javax.swing.JCheckBox();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        Calendarium cal = new Calendarium(jPanel1);
+        JPanel p1= cal.CalendariumP1();
+
+        //Panel1.setLayout(new java.awt.BorderLayout());
+        //jPanel1.add(p1, BorderLayout.CENTER);
+        //JPanel p2= cal.CalendariumP2();
+        jPanel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.setLayout(new java.awt.BorderLayout());
+
+        jLabel2.setText("Mise");
+        ArrayList<JPanel> list= cal.CalendariumP2();
+        jPanel1.add(list.get(0), BorderLayout.CENTER);
+        jPanel1.add(list.get(1), BorderLayout.SOUTH);
+
+        jLabel1.setText("jLabel1");
+
+        jLabel3.setText("Total");
+
+        jLabel4.setText("jLabel4");
+
+        jButton1.setText("Enregistrer");
+
+        jLabel5.setText("Nombre");
+
+        jLabel6.setText("jLabel6");
+
+        jCheckBox1.setText("Select. tout");
+
+        org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(jSeparator1)
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(jButton1)
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .add(layout.createSequentialGroup()
+                .add(47, 47, 47)
+                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
+                    .add(layout.createSequentialGroup()
+                        .add(jCheckBox1)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .add(jLabel2)
+                        .add(18, 18, 18)
+                        .add(jLabel1))
+                    .add(jPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 448, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(49, Short.MAX_VALUE))
+            .add(layout.createSequentialGroup()
+                .add(45, 45, 45)
+                .add(jLabel3)
+                .add(18, 18, 18)
+                .add(jLabel4)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(jLabel5)
+                .add(35, 35, 35)
+                .add(jLabel6)
+                .add(54, 54, 54))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(layout.createSequentialGroup()
+                .add(10, 10, 10)
+                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(jLabel2)
+                    .add(jLabel1)
+                    .add(jCheckBox1))
+                .add(18, 18, 18)
+                .add(jPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 261, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(12, 12, 12)
+                .add(jButton1)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                .add(jSeparator1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(jLabel3)
+                    .add(jLabel4)
+                    .add(jLabel5)
+                    .add(jLabel6))
+                .add(0, 9, Short.MAX_VALUE))
+        );
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Tontinedata.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Tontinedata.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Tontinedata.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Tontinedata.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                Tontinedata data= new Tontinedata();
+                 data.setVisible(true);
+              //  Calendarium cal = new Calendarium(data);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JSeparator jSeparator1;
+    // End of variables declaration//GEN-END:variables
+}

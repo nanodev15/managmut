@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jSplitPane1" pref="0" max="32767" attributes="0"/>
+          </Group>
+          <Component id="jLabel1" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jLabel1" min="-2" pref="50" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jSplitPane1" min="-2" pref="546" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/nehemie_mutuelle/loan2.png"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JSplitPane" name="jSplitPane1">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanel2">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="c4" green="d4" red="bf" type="rgb"/>
+            </Property>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[150, 546]"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
+              <JSplitPaneConstraints position="left"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton2" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="407" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="jButton1">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Trebuchet MS" size="12" style="3"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Nouveau Dossier"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton1.setBackground(new Color(0x2dce98));&#xa;jButton1.setForeground(Color.black);&#xa;&#xa;        // customize the button with your own look&#xa;jButton1.setUI(new StyledButtonUI());"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton2">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Trebuchet MS" size="12" style="3"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Ouvrir un Dossier"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton2.setBackground(new Color(0x2dce98));&#xa;  jButton2.setForeground(Color.black);&#xa;        // customize the button with your own look&#xa;  jButton2.setUI(new StyledButtonUI());"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton3">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Trebuchet MS" size="12" style="3"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Ech&#xe9;ances &#xe0; payer"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton3.setBackground(new Color(0x2dce98));&#xa;  jButton3.setForeground(Color.black);&#xa;        // customize the button with your own look&#xa;  jButton3.setUI(new StyledButtonUI());"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel8">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
+              <JSplitPaneConstraints position="right"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jTabbedPane4" alignment="1" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jTabbedPane4" alignment="0" pref="546" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JTabbedPane" name="jTabbedPane4">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="jPanel10">
+                  <Properties>
+                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[838, 652]"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="jSplitPane1.addPropertyChangeListener(&quot;dividerLocation&quot;, new PropertyChangeListener()&#xa;{&#xa;    @Override&#xa;    public void propertyChange(PropertyChangeEvent e)&#xa;    {&#xa;        int location = ((Integer)e.getNewValue()).intValue();&#xa;        System.out.println(location);&#xa;&#xa;        if (location &gt; 150)&#xa;        {&#xa;            JSplitPane splitPane = (JSplitPane)e.getSource();&#xa;            splitPane.setDividerLocation( 150 );&#xa;        }&#xa;    }&#xa;});"/>
+                  </AuxValues>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="R&#xe9;sum&#xe9;">
+                        <Property name="tabTitle" type="java.lang.String" value="R&#xe9;sum&#xe9;"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+                  <SubComponents>
+                    <Container class="javax.swing.JPanel" name="jPanel1">
+                      <Properties>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                            <EmptyBorder/>
+                          </Border>
+                        </Property>
+                        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[838, 652]"/>
+                        </Property>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="mangersumgrid"/>
+                        <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="mangersumgrid = new lnmangersum(0);"/>
+                      </AuxValues>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                          <BorderConstraints direction="Center"/>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                        <Property name="columns" type="int" value="0"/>
+                        <Property name="rows" type="int" value="1"/>
+                      </Layout>
+                    </Container>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel9">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Remboursements autom">
+                        <Property name="tabTitle" type="java.lang.String" value="Remboursements autom"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane1" pref="816" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jButton4" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jButton5" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jButton14" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
+                              <Component id="jScrollPane1" min="-2" pref="304" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jButton4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jButton5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jButton14" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="60" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTable" name="jTable1">
+                          <Properties>
+                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                              <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {&#xa;        {null, null, null, null, null, null, null, null, null, null, null, null},&#xa;        {null, null, null, null, null, null, null, null, null, null, null, null},&#xa;        {null, null, null, null, null, null, null, null, null, null, null, null},&#xa;        {null, null, null, null, null, null, null, null, null, null, null, null}&#xa;    },&#xa;    new String [] {&#xa;        &quot;Num&quot;, &quot;Date Ech&#xe9;ance&quot;, &quot;Capital&quot;, &quot;Int&#xe9;r&#xea;ts&quot;, &quot;Ech&#xe9;ance&quot;, &quot;P&#xe9;nalit&#xe9;s&quot;, &quot;Total d&#xfb;&quot;, &quot;Total rembours&#xe9;&quot;, &quot;Type rembours.&quot;, &quot;Date rembours.&quot;, &quot;Enreg. par&quot;, &quot;Saved&quot;&#xa;    }&#xa;){&#xa;&#xa;    Class[] types = {Object.class, Object.class, Object.class, Object.class, Double.class, Double.class, Double.class, Double.class, String.class, String.class, String.class,&#xa;        Boolean.class};&#xa;    @Override&#xa;    //  public Class getColumnClass(int columnIndex) {&#xa;        //     return this.types[columnIndex];&#xa;        //  }&#xa;&#xa;    public Class getColumnClass(int column)&#xa;    {&#xa;        //      for (int row = 0; row &lt; getRowCount(); row++)&#xa;        //      {&#xa;            //          Object o = getValueAt(row, column);&#xa;&#xa;            //          if (o != null)&#xa;            //          return o.getClass();&#xa;            //        }&#xa;&#xa;        return types[column];&#xa;    }&#xa;&#xa;    @Override&#xa;    public boolean isCellEditable(int row, int column) {&#xa;        if (column == 0 || column == 1 || column == 2 || column ==3 || column == 4 || column == 6 || column == 10) return false;&#xa;        return true;&#xa;    }&#xa;&#xa;}&#xa;" type="code"/>
+                            </Property>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="jScrollPane1.setRowHeaderView(fixed);&#xa;jScrollPane1.setCorner(JScrollPane.UPPER_LEFT_CORNER, fixed.getTableHeader());&#xa;// Synchronize scrolling of the row header with the main table&#xa;jScrollPane1.getRowHeader().addChangeListener(new ChangeListener() {&#xa;public void stateChanged(ChangeEvent e)&#xa;&#x9;{&#xa;&#x9;&#x9;//  Sync the scroll pane scrollbar with the row header&#xa;&#x9;&#x9;JViewport viewport = (JViewport) e.getSource();&#xa;&#x9;&#x9;jScrollPane1.getVerticalScrollBar().setValue(viewport.getViewPosition().y);&#xa;&#x9;}&#xa;});  // A modifier&#xa;sorter = new TableRowSorter&lt;DefaultTableModel&gt;((DefaultTableModel)jTable1.getModel());&#xa;&#xa;&#xa;&#xa;// Nox jComboBox column&#xa;TableColumn comboCol1 = jTable1.getColumnModel().getColumn(6);&#xa;comboCol1.setCellEditor(new CustomComboBoxEditor(this.orderlist));&#xa;JTextField jt = new JTextField();&#xa;&#xa;&#xa;jt.addKeyListener(new KeyListener () {&#xa;  public void keyPressed(KeyEvent e) { }&#xa;  public void keyReleased(KeyEvent e) { }&#xa;  public void keyTyped(KeyEvent e) {&#xa;  char c = e.getKeyChar(); // Get the typed character&#xa;    // Don&apos;t ignore backspace or delete&#xa;    // Don&apos;t ignore backspace or delete &#xa;if (c != KeyEvent.VK_BACK_SPACE &amp;&amp; c != KeyEvent.VK_DELETE) { &#xa;// If the key was not a number then discard it (this is a sloppy way to check) &#xa;if (!(c == &apos;0&apos; || c == &apos;1&apos; || c == &apos;2&apos; || c == &apos;3&apos; || c == &apos;4&apos; || c == &apos;5&apos; || c == &apos;6&apos; || c == &apos;7&apos; || c == &apos;8&apos; || c == &apos;9&apos;)) { &#xa;&#xa;//if point character typed increase numberofpointcharacters by one &#xa;if ((c == &apos;.&apos;)) { &#xa;&#xa;// If the input string already contains a decimal point, don&apos;t &#xa;// do anything to it. &#xa;if (((JTextField) e.getComponent()).getText().indexOf(&quot;.&quot;) &lt; 0) &#xa;{ &#xa;// don&apos;t consume it &#xa;} &#xa;else &#xa;{ &#xa;e.consume(); // Ignore this key &#xa;return; &#xa;} &#xa;&#xa;} &#xa;else{ &#xa;&#xa;e.consume(); // Ignore this key &#xa;} &#xa;&#xa;} &#xa;} &#xa;}&#xa;});&#xa;&#xa;&#xa;&#xa;TableColumn col2 = jTable1.getColumnModel().getColumn(3);&#xa;System.out.println(&quot;Valeur des colonnes&quot;+(String) col2.getHeaderValue());&#xa;col2.setCellEditor(new InputNumTextFieldEditor (jt));&#xa;TableColumn col3 = jTable1.getColumnModel().getColumn(5);&#xa;col3.setCellEditor(new InputNumTextFieldEditor(jt));&#xa;&#xa;&#xa;//col4.setCellEditor(new DefaultCellEditor(jt));&#xa;//System.out.println(&quot;arrived here&quot;);&#xa;//jTable1.getColumnModel().getColumn(7).setCellRenderer(new DateCellRenderer());&#xa;//jTable1.getColumnModel().getColumn(8).setCellRenderer(new DateCellRenderer());&#xa;//jTable1.getColumnModel().getColumn(6).setCellRenderer(new DateCellRenderer());&#xa;&#xa;&#xa;jTable1.getModel().addTableModelListener(new TableModelListener() {&#xa;   public void tableChanged(TableModelEvent e) {&#xa;        if (e.getColumn()==5) {&#xa;        System.out.println(&quot;valeur 1 &quot;+jTable1.getValueAt(jTable1.getSelectedRow(), 2));&#xa;        System.out.println(&quot;valeur 2 &quot;+jTable1.getValueAt(jTable1.getSelectedRow(), 3));&#xa;        System.out.println(&quot;valeur 3 &quot;+jTable1.getValueAt(jTable1.getSelectedRow(), 4));&#xa;        double value1= Double.valueOf((double) (jTable1.getValueAt(jTable1.getSelectedRow(), 2)));&#xa;        double value2 = 0.0;&#xa;        if ((jTable1.getValueAt(jTable1.getSelectedRow(), 3)).getClass() == java.lang.Double.class) {&#xa;            value2 = ((Double) (jTable1.getValueAt(jTable1.getSelectedRow(), 3))).doubleValue();&#xa;        } else {&#xa;            value2=  Double.valueOf((String) (jTable1.getValueAt(jTable1.getSelectedRow(), 3)));&#xa;        }&#xa;        System.out.println(&quot;value1&quot;+value1);&#xa;        System.out.println(&quot;value2&quot;+value2);&#xa;        jTable1.setValueAt((double) value1+value2, jTable1.getSelectedRow(), 4);&#xa;    }&#xa;  }&#xa;});&#xa;&#xa;&#xa;&#xa;// Col 4&#xa;TableColumn col4 = jTable1.getColumnModel().getColumn(7);&#xa;JFormattedTextField jft = new JFormattedTextField(df);&#xa;jft.setColumns(10);&#xa;        try {&#xa;            MaskFormatter dateMask = new MaskFormatter(&quot;##/##/####&quot;);&#xa;            dateMask.install(jft);&#xa;        } catch (ParseException ex) {&#xa;            Logger.getLogger(loanmanager.class.getName()).log(Level.SEVERE, null, ex);&#xa;        }&#xa;&#xa;&#xa;//col4.setCellRenderer(new DateCellRenderer());&#xa;//col4.setCellEditor(new DefaultCellEditor(jft));&#xa;&#xa;//jTable1.getModel().addTableModelListener(this);"/>
+                            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTable() {&#xa;    public boolean getScrollableTracksViewportWidth(){&#xa;        return getPreferredSize().width &lt; getParent().getWidth();&#xa;    }&#xa;}"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jTable1.getColumnModel().getColumn(0).setMaxWidth(40);&#xa;jTable1.getColumnModel().getColumn(1).setPreferredWidth(90);&#xa;jTable1.getColumnModel().getColumn(2).setPreferredWidth(140);&#xa;jTable1.getColumnModel().getColumn(3).setPreferredWidth(140);&#xa;jTable1.getColumnModel().getColumn(4).setPreferredWidth(140);&#xa;jTable1.getColumnModel().getColumn(5).setPreferredWidth(140);&#xa;jTable1.getColumnModel().getColumn(6).setPreferredWidth(130);&#xa;//jTable1.getColumnModel().getColumn(7).setPreferredWidth(130);&#xa;jTable1.getColumnModel().getColumn(11).setWidth(0);&#xa;jTable1.getColumnModel().getColumn(11).setMinWidth(0);&#xa;jTable1.getColumnModel().getColumn(11).setMaxWidth(0);&#xa;&#xa;jTable1.setDefaultRenderer(Object.class, new DefaultTableCellRenderer(){&#xa;    @Override&#xa;    public Component getTableCellRendererComponent(JTable table,&#xa;            Object value, boolean isSelected, boolean hasFocus, int row, int col) {&#xa;&#xa;        super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, col);&#xa;&#xa;        Boolean status = (Boolean) table.getModel().getValueAt(row, 11);&#xa;        if (status==true) {&#xa;            setBackground(new Color(173,190,230));&#xa;            setForeground(Color.WHITE);&#xa;        } else {&#xa;            setBackground(table.getBackground());&#xa;            setForeground(table.getForeground());&#xa;        }       &#xa;        return this;&#xa;    }   &#xa;});&#xa;&#xa;jTable1.setDefaultRenderer(Double.class, new DefaultTableCellRenderer(){&#xa;    @Override&#xa;    public Component getTableCellRendererComponent(JTable table,&#xa;            Object value, boolean isSelected, boolean hasFocus, int row, int col) {&#xa;&#xa;        super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, col);&#xa;&#xa;        Boolean status = (Boolean) table.getModel().getValueAt(row, 11);&#xa;        if (status==true) {&#xa;            setBackground(new Color(173,190,230));&#xa;            setForeground(Color.WHITE);&#xa;        } else {&#xa;            setBackground(table.getBackground());&#xa;            setForeground(table.getForeground());&#xa;        }       &#xa;        return this;&#xa;    }   &#xa;});&#xa;&#xa;jTable1.setDefaultRenderer(String.class, new DefaultTableCellRenderer(){&#xa;    @Override&#xa;    public Component getTableCellRendererComponent(JTable table,&#xa;            Object value, boolean isSelected, boolean hasFocus, int row, int col) {&#xa;&#xa;        super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, col);&#xa;&#xa;        Boolean status = (Boolean) table.getModel().getValueAt(row, 11);&#xa;        if (status==true) {&#xa;            setBackground(new Color(173,190,230));&#xa;            setForeground(Color.WHITE);&#xa;        } else {&#xa;            setBackground(table.getBackground());&#xa;            setForeground(table.getForeground());&#xa;        }       &#xa;        return this;&#xa;    }   &#xa;});&#xa;&#xa;jTable1.getColumnModel().getColumn(1).setCellRenderer(new YMDRenderer());&#xa;&#xa;&#xa;&#xa;// Fixed jTable operations&#xa;jTable1.setAutoCreateColumnsFromModel(false);&#xa;jTable1.addPropertyChangeListener(new PropertyChangeListener () {&#xa;  &#xa;&#x9;public void propertyChange(PropertyChangeEvent e)&#xa;&#x9;{&#xa;&#x9;&#x9;//  Keep the fixed table in sync with the main table&#xa;&#xa;&#x9;&#x9;if (&quot;selectionModel&quot;.equals(e.getPropertyName()))&#xa;&#x9;&#x9;{&#xa;&#x9;&#x9;&#x9;fixed.setSelectionModel(jTable1.getSelectionModel() );&#xa;&#x9;&#x9;}&#xa;&#xa;&#x9;&#x9;if (&quot;model&quot;.equals(e.getPropertyName()))&#xa;&#x9;&#x9;{&#xa;&#x9;&#x9;&#x9;fixed.setModel(jTable1.getModel() );&#xa;&#x9;&#x9;}&#xa;&#x9;}&#xa;});  // A modifier &#xa;//  Use the existing table to create a new table sharing&#xa;//  the DataModel and ListSelectionModel&#xa;int totalColumns = jTable1.getColumnCount();&#xa;fixed = new JTable();&#xa;fixed.setAutoCreateColumnsFromModel(false);&#xa;fixed.setModel(jTable1.getModel());&#xa;fixed.setSelectionModel(jTable1.getSelectionModel());&#xa;fixed.setFocusable(false);&#xa;&#xa;//  Remove the fixed columns from the main table&#xa;//  and add them to the fixed table&#xa;for (int i = 0; i &lt; fixedColumns; i++){&#xa;    TableColumnModel columnModel = jTable1.getColumnModel();&#xa;    TableColumn column = columnModel.getColumn(0);&#xa;    columnModel.removeColumn(column);&#xa;    fixed.getColumnModel().addColumn(column);&#xa;}&#xa;&#xa;&#xa;&#xa;//  Add the fixed table to the scroll pane&#xa;&#xa;fixed.setPreferredScrollableViewportSize(fixed.getPreferredSize());&#xa;&#xa;// Other &#xa;&#xa;fixed.setDefaultRenderer(Object.class, new DefaultTableCellRenderer(){&#xa;    @Override&#xa;    public Component getTableCellRendererComponent(JTable table,&#xa;            Object value, boolean isSelected, boolean hasFocus, int row, int col) {&#xa;&#xa;        super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, col);&#xa;&#xa;        Boolean status = (Boolean) (((Date) table.getModel().getValueAt(row, 1)).before(new Date()) &amp;&amp; ((Boolean) jTable1.getValueAt(row, 9)== false));&#xa;        Boolean paidstatus = (Boolean) (((Date) table.getModel().getValueAt(row, 1)).before(new Date()) &amp;&amp; ((Boolean) jTable1.getValueAt(row, 9)== true) &amp;&amp; (Boolean) ((Double) jTable1.getValueAt(row, 5) &lt; (Double) jTable1.getValueAt(row, 4)));&#xa;        Boolean alrepaidstatus = (Boolean) (((Date) table.getModel().getValueAt(row, 1)).before(new Date()) &amp;&amp; ((Boolean) jTable1.getValueAt(row, 9)== true) &amp;&amp; (Boolean) ((Double) jTable1.getValueAt(row, 5) &gt;= (Double) jTable1.getValueAt(row, 4)));&#xa;        if (status==true) {&#xa;            setBackground(new Color(147,58,22));&#xa;            setForeground(Color.WHITE);&#xa;        } else {&#xa;            if (paidstatus)&#xa;               setBackground(new Color(0,0,255));&#xa;            else if (alrepaidstatus) {&#xa;                 setBackground(new Color(255,255, 0)); &#xa;            } else {&#xa;                setBackground(table.getBackground());&#xa;            }&#xa;            setForeground(table.getForeground());&#xa;        }       &#xa;        return this;&#xa;    }   &#xa;});"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jTable1.setAutoResizeMode (JTable.AUTO_RESIZE_OFF);&#xa;jTable1.setPreferredScrollableViewportSize(new Dimension(1000,70));&#xa;jTable1.setFillsViewportHeight(true);"/>
+                          </AuxValues>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Component class="javax.swing.JButton" name="jButton4">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/nehemie_mutuelle/iconval.png"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Valider"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jButton5">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/nehemie_mutuelle/delete_symbol.png"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Supprimer"/>
+                        <Property name="toolTipText" type="java.lang.String" value="Supprimer les valeurs"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jButton14">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/nehemie_mutuelle/Modify-icon.png"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Changer le statut"/>
+                        <Property name="toolTipText" type="java.lang.String" value="Supprimer les valeurs"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton14ActionPerformed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel3">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Remboursements libres">
+                        <Property name="tabTitle" type="java.lang.String" value="Remboursements libres"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jScrollPane2" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jButton6" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="jButton7" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="jButton8" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="jButton9" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+                              <Component id="jScrollPane2" min="-2" pref="386" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jButton6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jButton7" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jButton8" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jButton9" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTable" name="jTable2">
+                          <Properties>
+                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                              <Table columnCount="7" rowCount="4">
+                                <Column editable="false" title="N&#xb0;" type="java.lang.Integer"/>
+                                <Column editable="false" title="Date rembours." type="java.lang.Object"/>
+                                <Column editable="false" title="Montant" type="java.lang.Double"/>
+                                <Column editable="false" title="Type rembours." type="java.lang.String"/>
+                                <Column editable="false" title="Libell&#xe9;" type="java.lang.String"/>
+                                <Column editable="false" title="Dern. Mod" type="java.lang.String"/>
+                                <Column editable="false" title="Idenr" type="java.lang.Integer"/>
+                              </Table>
+                            </Property>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jTable2.getColumnModel().getColumn(6).setWidth(0);&#xa;jTable2.getColumnModel().getColumn(6).setMinWidth(0);&#xa;jTable2.getColumnModel().getColumn(6).setMaxWidth(0);"/>
+                          </AuxValues>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Component class="javax.swing.JButton" name="jButton6">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/nehemie_mutuelle/add-icon.png"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Nouveau"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton6ActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jButton7">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/nehemie_mutuelle/Edit.png"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Editer"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton7ActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jButton8">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/nehemie_mutuelle/delete_symbol.png"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Supprimer"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton8ActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jButton9">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/nehemie_mutuelle/penalty.png"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Penalit&#xe9;"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton9ActionPerformed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel4">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Remboursements &#xe0; terme">
+                        <Property name="tabTitle" type="java.lang.String" value="Remboursements &#xe0; terme"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                              <Component id="jButton10" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                              <Component id="jButton11" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                              <Component id="jButton12" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jButton13" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace pref="377" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="jScrollPane3" alignment="1" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                              <Component id="jScrollPane3" min="-2" pref="354" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jButton10" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jButton11" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jButton12" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jButton13" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="32" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTable" name="jTable3">
+                          <Properties>
+                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                              <Table columnCount="7" rowCount="4">
+                                <Column editable="false" title="N&#xb0;" type="java.lang.Integer"/>
+                                <Column editable="false" title="Date remb." type="java.lang.Object"/>
+                                <Column editable="false" title="Montant" type="java.lang.Double"/>
+                                <Column editable="false" title="Type remb." type="java.lang.String"/>
+                                <Column editable="false" title="Libelle" type="java.lang.String"/>
+                                <Column editable="false" title="Dern mod" type="java.lang.String"/>
+                                <Column editable="false" title="idrembours" type="java.lang.Integer"/>
+                              </Table>
+                            </Property>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jTable3.getColumnModel().getColumn(6).setWidth(0);&#xa;jTable3.getColumnModel().getColumn(6).setMinWidth(0);&#xa;jTable3.getColumnModel().getColumn(6).setMaxWidth(0);"/>
+                          </AuxValues>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Component class="javax.swing.JButton" name="jButton10">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/nehemie_mutuelle/add-icon.png"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Nouveau"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton10ActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jButton11">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/nehemie_mutuelle/Edit.png"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Editer"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="jButton11ItemStateChanged"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton11ActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jButton12">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/nehemie_mutuelle/delete_symbol.png"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Supprimer"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton12ActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jButton13">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/nehemie_mutuelle/penalty.png"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Penalit&#xe9;s"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton13ActionPerformed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

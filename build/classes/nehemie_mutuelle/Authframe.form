@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.5" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Component id="jScrollPane1" min="-2" pref="792" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jButton1" min="-2" pref="46" max="-2" attributes="0"/>
+                  <Component id="jButton2" min="-2" pref="46" max="-2" attributes="0"/>
+                  <Component id="jButton3" min="-2" pref="46" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+          <Component id="jLabel1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Component id="jLabel1" min="-2" pref="46" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace pref="37" max="32767" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="384" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="jTable1">
+          <Properties>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor" postCode="jTable1.getColumn (&quot;Mot de passe&quot;).setCellRenderer(new PasswordCellRenderer());&#xa;jTable1.getColumnModel().getColumn(4).setMinWidth(0);&#xa;jTable1.getColumnModel().getColumn(4).setMaxWidth(0);&#xa;JTextField textField = new JTextField();&#xa;JTextField textField2 = new JTextField();&#xa;textField2.addKeyListener(new java.awt.event.KeyAdapter() {&#xa;                public void keyTyped(java.awt.event.KeyEvent evt) {&#xa;                    FirstnameKeyTyped(evt);&#xa;                }});&#xa;textField.setDocument(new CWDocumentUpperCaseText());&#xa;DefaultCellEditor dce1 = new DefaultCellEditor( textField );&#xa;DefaultCellEditor dce2 = new DefaultCellEditor(textField2);&#xa;jTable1.getColumnModel().getColumn(0).setCellEditor(dce1);&#xa;jTable1.getColumnModel().getColumn(1).setCellEditor(dce2);&#xa; Action action = new AbstractAction () {&#xa;                    public void ActionPerformed(ActionEvent e ){&#xa;                        &#xa;                    }&#xa;&#xa;                    @Override&#xa;                    public void actionPerformed(ActionEvent e) {&#xa;                       &#xa;                     TableCellListener tcl = (TableCellListener) e.getSource(); &#xa;                     int column = tcl.getColumn();&#xa;                     if (column == 2) {&#xa;                         int row = tcl.getRow();&#xa;                         oldidValue= (String) tcl.getOldValue();&#xa;                    }&#xa;                     &#xa;                    if (column==3) {&#xa;                        oldPass = (String)  tcl.getOldValue();&#xa;                    }&#xa;                    }&#xa;                };&#xa;TableCellListener tcl = new TableCellListener (jTable1, action);">
+              <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    out,&#xa;    new String [] {&#xa;        &quot;Noms&quot;, &quot;Pr&#xe9;noms&quot;, &quot;Identifiant&quot;, &quot;Mot de passe&quot;, &quot;newinsert&quot;&#xa;    }&#xa;)&#xa;{&#xa;    boolean[] canEdit = new boolean [] {&#xa;        true, true, true, true, false&#xa;    };&#xa;&#xa;    Class[] types = {String.class, String.class, String.class,&#xa;        String.class, Boolean.class};&#xa;&#xa;    @Override&#xa;    public Class getColumnClass(int columnIndex) {&#xa;        return this.types[columnIndex];&#xa;    }&#xa;&#xa;    public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;        if (alledit) return true;&#xa;        else {&#xa;            if (rowIndex != position) return true;&#xa;            else return false;&#xa;        }&#xa;    }}&#xa;    " type="code"/>
+            </Property>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+              <TableColumnModel selectionModel="0">
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+              </TableColumnModel>
+            </Property>
+            <Property name="rowHeight" type="int" value="25"/>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="try {&#xa;            // TODO add your handling code here:&#xa;          data=getLoggers();&#xa;        } catch (Exception ex) {&#xa;            Logger.getLogger(Authframe&#xa;.class.getName()).log(Level.SEVERE, null, ex);&#xa;        }&#xa;Object[][] out = to2DimArray(data);&#xa;&#xa;//jTable1.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);&#xa;//jTable4.setFillsViewportHeight(true);&#xa;&#xa;//sorter = new TableRowSorter&lt;DefaultTableModel&gt;((DefaultTableModel)jTable4.getModel());&#xa;//jTable4.setRowSorter(sorter);"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/nehemie_mutuelle/add-icon.png"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="if(!Login.connectedlogin.equalsIgnoreCase(&quot;nehemie&quot;)) jButton1.setEnabled(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton2">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/nehemie_mutuelle/save-icon.png"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton3">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/nehemie_mutuelle/delete_symbol.png"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="if(!Login.connectedlogin.equalsIgnoreCase(&quot;nehemie&quot;)) jButton3.setEnabled(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/nehemie_mutuelle/useraccount.png"/>
+        </Property>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

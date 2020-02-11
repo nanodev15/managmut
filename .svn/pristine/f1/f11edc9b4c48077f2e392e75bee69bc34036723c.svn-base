@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.5" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+          <Component id="jTabbedPane1" alignment="0" pref="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jLabel1" min="-2" pref="65" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jTabbedPane1" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/nehemie_mutuelle/Bilan_tontine.png"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JTabbedPane" name="jTabbedPane1">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="" noResource="true"/>
+        <Property name="opaque" type="boolean" value="true"/>
+      </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value=""/>
+      </AccessibilityProperties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="jTabbedPane1StateChanged"/>
+      </Events>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanel1">
+          <Properties>
+            <Property name="verifyInputWhenFocusTarget" type="boolean" value="false"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Bilan annuel">
+                <Property name="tabTitle" type="java.lang.String" value="Bilan annuel"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace pref="22" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jComboBox1" min="-2" pref="269" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jScrollPane1" min="-2" pref="769" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="32" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="275" max="-2" attributes="0"/>
+                      <EmptySpace pref="83" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTable" name="jTable1">
+                  <Properties>
+                    <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    out,&#xa;    new String [] {&#xa;        &quot;Mois&quot;, &quot;Commission sur Tontine&quot;, &quot;Cotisation&quot;, &quot;Retraits&quot;&#xa;    }&#xa;) {&#xa;    boolean[] canEdit = new boolean [] {&#xa;        false, false, false, false&#xa;    };&#xa;&#xa;    Class[] types = {Date.class, Double.class, Double.class,&#xa;        Double.class};&#xa;&#xa;    @Override&#xa;    public Class getColumnClass(int columnIndex) {&#xa;        return this.types[columnIndex];&#xa;    }&#xa;&#xa;    public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;        return canEdit [columnIndex];&#xa;    }&#xa;    // nouveau ajout&#xa;    // public void setValueAt(Object value, int row, int col) {&#xa;        //     Vector rowVector = (Vector) dataVector.elementAt(row);&#xa;        //     if (col == TOTAL_COLUMN) {&#xa;            //          Double d = null;&#xa;            //         if (value instanceof Double) {&#xa;                //            d = (Double) value;&#xa;                //         } else {&#xa;                //            try {&#xa;                    //                 d = new Double(((Number) formatter&#xa;                        //                     .parse((String) value)).doubleValue());&#xa;                //         } catch (ParseException ex) {&#xa;                //            d = new Double(0.0);&#xa;                //         }&#xa;            //    }&#xa;        //      rowVector.setElementAt(d, col);&#xa;        //  } else {&#xa;        //      rowVector.setElementAt(value, col);&#xa;        //  }}&#xa;&#xa;}" type="code"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTable()"/>
+                    <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="//sorter &#xa;sorter = new TableRowSorter&lt;DefaultTableModel&gt;((DefaultTableModel)jTable1.getModel());&#xa;jTable1.setRowSorter(sorter);&#xa;&#xa;&#xa;//jTable1.getModel().addTableModelListener(new TableModelListener() {&#xa;&#xa;//     public void tableChanged(TableModelEvent e) {&#xa;//          totalrow= jTable1.getRowCount() -1;&#xa;//          reCalcurate(jTable1.getModel());&#xa;//      }&#xa;//    });"/>
+                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="conn = Connect.ConnectDb();&#xa;ResultSet rs0 = null;&#xa;    try {&#xa;            pre = conn.prepareStatement(&quot;SELECT MIN(DateTontine), MAX(DateTontine) FROM Tontine&quot;);&#xa;            rs0 = pre.executeQuery();&#xa;            while (rs0.next()) {&#xa;                startDate=rs0.getDate(1);&#xa;                endDate=rs0.getDate(2);&#xa;            }&#xa;       } catch (SQLException ex) {&#xa;            Logger.getLogger(TontineSynthese.class.getName()).log(Level.SEVERE, null, ex);&#xa;        }   finally {&#xa;             &#xa;            try {&#xa;           if (rs0 !=null) &#xa;            rs0.close();&#xa;           &#xa;           if (pre !=null) &#xa;            pre.close();&#xa;           &#xa;           if (conn !=null)&#xa;            conn.close();&#xa;            } catch (SQLException ex) {&#xa;  Logger.getLogger(TontineSynthese.class.getName()).log(Level.SEVERE, null, ex);&#xa;            }&#xa;       }&#xa;&#xa;&#xa;try {&#xa;            // TODO add your handling code here:&#xa;            data=getSynthese();&#xa;        } catch (Exception ex) {&#xa;            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);&#xa;        }&#xa;Object[][] out = to2DimArray(data);&#xa;&#xa;//jTable1.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);&#xa;jTable1.setFillsViewportHeight(true);"/>
+                  </AuxValues>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="jLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Choix de l&apos;ann&#xe9;e:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="jComboBox1">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="4">
+                    <StringItem index="0" value="Exercice 2011"/>
+                    <StringItem index="1" value="Exercice 2012"/>
+                    <StringItem index="2" value="Exercice 2013"/>
+                    <StringItem index="3" value="Exercice 2014"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="jComboBox1ItemStateChanged"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="int minyear=0;&#xa;int maxyear=0;&#xa;conn = Connect.ConnectDb();&#xa;ResultSet rs = null;&#xa;    try {&#xa;            pre = conn.prepareStatement(&quot;SELECT MIN(YEAR(DateTontine)) as minyear, MAX(YEAR(DateTontine)) as maxyear FROM Tontine&quot;);&#xa;            rs = pre.executeQuery();&#xa;            while (rs.next()) {&#xa;                minyear=rs.getInt(1);&#xa;                //maxyear=rs.getInt(2);&#xa;                maxyear=Calendar.getInstance().get(Calendar.YEAR);  // m&#xe9;thode &#xe0; revoir &#xa;                if(maxyear &lt; rs.getInt(2)) maxyear=rs.getInt(2);&#xa;            }&#xa;       } catch (SQLException ex) {&#xa;            Logger.getLogger(TontineSynthese.class.getName()).log(Level.SEVERE, null, ex);&#xa;        }   finally {&#xa;             &#xa;            try {&#xa;           if (rs !=null) &#xa;            rs.close();&#xa;           &#xa;           if (pre !=null) &#xa;            pre.close();&#xa;           &#xa;           if (conn !=null)&#xa;            conn.close();&#xa;            } catch (SQLException ex) {&#xa;  Logger.getLogger(TontineSynthese.class.getName()).log(Level.SEVERE, null, ex);&#xa;            }&#xa;       }     &#xa;          // Connect.close(conn, rs, pre);&#xa;        &#xa;&#xa;if (minyear !=0 &amp;&amp; maxyear !=0){&#xa;jComboBox1.removeAllItems();&#xa;for (int i=minyear; i&lt;=maxyear; i++) {&#xa;jComboBox1.addItem(&quot;Exercice &quot;+i);&#xa;}&#xa;}"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel2">
+          <Events>
+            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jPanel2FocusGained"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Versements">
+                <Property name="tabTitle" type="java.lang.String" value="Versements"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jTabbedPane2" alignment="1" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jComboBox2" min="-2" pref="256" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jComboBox2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jTabbedPane2" min="-2" pref="352" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JTabbedPane" name="jTabbedPane2">
+              <Properties>
+                <Property name="tabPlacement" type="int" value="3"/>
+              </Properties>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="jPanel4">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="tab1">
+                        <Property name="tabTitle" type="java.lang.String" value="tab1"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane2" alignment="0" pref="791" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane2" alignment="0" pref="314" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTable" name="jTable2">
+                          <Properties>
+                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                              <Table columnCount="11" rowCount="6">
+                                <Column editable="true" title="N&#xb0;" type="java.lang.Integer"/>
+                                <Column editable="true" title="N&#xb0; Carnet" type="java.lang.String">
+                                  <Data value="df"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                </Column>
+                                <Column editable="true" title="Noms &amp; Pr&#xe9;noms" type="java.lang.String">
+                                  <Data value="df"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                </Column>
+                                <Column editable="true" title="Report" type="java.lang.Double"/>
+                                <Column editable="true" title="Mise" type="java.lang.Integer"/>
+                                <Column editable="true" title="Retenue" type="java.lang.Integer"/>
+                                <Column editable="true" title="Cot. /31" type="java.lang.Integer"/>
+                                <Column editable="true" title="Pourcentage" type="java.lang.Object">
+                                  <Data value="50.4534"/>
+                                  <Data value="20.58"/>
+                                  <Data value="10.2585"/>
+                                  <Data value="85.258"/>
+                                  <Data value="69.258"/>
+                                  <Data value="3258.25"/>
+                                </Column>
+                                <Column editable="true" title="Total" type="java.lang.Double"/>
+                                <Column editable="true" title="Retraits" type="java.lang.Double"/>
+                                <Column editable="true" title="Solde" type="java.lang.Double"/>
+                              </Table>
+                            </Property>
+                            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                              <TableColumnModel selectionModel="0">
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                              </TableColumnModel>
+                            </Property>
+                            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                            </Property>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTable() {&#xa;    public boolean getScrollableTracksViewportWidth(){&#xa;        return getPreferredSize().width &lt; getParent().getWidth();&#xa;    }&#xa;}"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jTable2.getColumnModel().getColumn(0).setPreferredWidth(30);&#xa;jTable2.getColumnModel().getColumn(1).setPreferredWidth(90);&#xa;jTable2.getColumnModel().getColumn(2).setPreferredWidth(250);&#xa;jTable2.getColumnModel().getColumn(3).setPreferredWidth(130);&#xa;jTable2.getColumnModel().getColumn(4).setPreferredWidth(130);&#xa;jTable2.getColumnModel().getColumn(5).setPreferredWidth(90);&#xa;jTable2.getColumnModel().getColumn(6).setPreferredWidth(120);&#xa;jTable2.getColumnModel().getColumn(7).setPreferredWidth(130);&#xa;jTable2.getColumnModel().getColumn(8).setPreferredWidth(130);&#xa;jTable2.getColumnModel().getColumn(9).setPreferredWidth(130);&#xa;jTable2.getColumnModel().getColumn(10).setPreferredWidth(130);&#xa;&#xa;// Progress bar renderer &#xa;IndicatorCellRenderer renderer = new IndicatorCellRenderer(MIN, MAX);&#xa;    renderer.setStringPainted(true);&#xa;    renderer.setBackground(jTable2.getBackground());&#xa;&#xa;    // set limit value and fill color&#xa;    Hashtable limitColors = new Hashtable();&#xa;    limitColors.put(new Integer(0), Color.green);&#xa;    limitColors.put(new Integer(60), Color.yellow);&#xa;    limitColors.put(new Integer(80), Color.red);&#xa;    renderer.setLimits(limitColors);&#xa;    System.out.println(&quot;dfdfd column model&quot;+jTable2.getColumnModel().getColumnCount());&#xa;    jTable2.getColumnModel().getColumn(7).setCellRenderer(renderer);&#xa;&#xa;jScrollPane2= new FrozenTablePane(jTable2, 3);"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jTable2.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);&#xa;jTable2.setFillsViewportHeight(true);&#xa;jTable2.setPreferredScrollableViewportSize(new Dimension(1000,70));"/>
+                          </AuxValues>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="jLabel3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ann&#xe9;e :"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="jComboBox2">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="4">
+                    <StringItem index="0" value="Item 1"/>
+                    <StringItem index="1" value="Item 2"/>
+                    <StringItem index="2" value="Item 3"/>
+                    <StringItem index="3" value="Item 4"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="JPanel jPanel5 = new JPanel(); &#xa;jTabbedPane2.add(&quot;tab 2&quot;, jPanel5);&#xa;//jTabbedPane2.add(&quot;tab 3&quot;, jPanel4);&#xa;//jTabbedPane2.add(&quot;tab 4&quot;, jPanel4);&#xa;//jTabbedPane2.add(&quot;tab 5&quot;, jPanel4);"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel3">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new ChartPanel(getChart())"/>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="//if (jComboBox1.getSelectedIndex() != -1) setChart((ChartPanel) jPanel3);&#xa;jComboBox1.setSelectedIndex(jComboBox1.getItemCount()-1);&#xa;//jScrollPane2= new FrozenTablePane(jTable2, 1);&#xa;//jScrollPane2.setViewportView(jTable2);"/>
+          </AuxValues>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Progression annuelle">
+                <Property name="tabTitle" type="java.lang.String" value="Progression annuelle"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="823" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="416" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

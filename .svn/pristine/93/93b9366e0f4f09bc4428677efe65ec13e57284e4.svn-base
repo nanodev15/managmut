@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Container class="javax.swing.JMenu" name="jMenu3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jMenu3"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="true"/>
+      </Layout>
+    </Container>
+    <Container class="javax.swing.JMenu" name="jMenu4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jMenu4"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="true"/>
+      </Layout>
+    </Container>
+    <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="jMenu5">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Fichier"/>
+          </Properties>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu6">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Edition"/>
+          </Properties>
+        </Menu>
+      </SubComponents>
+    </Menu>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="jMenuBar1"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jStatusBar1" alignment="0" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="jToolBar1" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jPanel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jSeparator1" min="-2" pref="8" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel4" max="32767" attributes="0"/>
+                              <EmptySpace min="-2" pref="117" max="-2" attributes="0"/>
+                              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jTextField1" min="-2" pref="118" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="jPanel5" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+              <Component id="jToolBar1" min="-2" pref="37" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="jSeparator1" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel4" alignment="0" min="-2" pref="32" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jTextField1" alignment="3" max="32767" attributes="0"/>
+                              <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" pref="278" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                      <Component id="jPanel5" min="-2" pref="262" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <Component id="jStatusBar1" min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder>
+              <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                <TitledBorder title="Adh&#xe9;sions"/>
+              </Border>
+            </TitledBorder>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="68" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="jButton1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Enfant"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Adulte"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Personne Morale"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel2">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Cr&#xe9;dits"/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jButton5" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton6" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="64" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="jButton5" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jButton6" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="13" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="jButton5">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="G&#xe9;rer les cr&#xe9;dits"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton6">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Remboursements"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel3">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Epargnes &amp; tontines"/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jButton8" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton9" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="55" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="jButton8" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="jButton9" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="24" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="jButton8">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="G&#xe9;rer les &#xe9;pargnes"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton8ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton9">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="G&#xe9;rer les tontines"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton9ActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel4">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Rapport &amp; Dashboard"/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jButton4" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton7" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="88" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="jButton4" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="jButton7" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="29" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="jButton4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Generer Excel"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton7">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Rapports"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="jTable1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Ubuntu" size="15" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor" postCode="popupMenu = new JPopupMenu();&#xa;        menuItemEpargnes = new JMenuItem(&quot;Epargnes&quot;);&#xa;        menuItemRetraits = new JMenuItem(&quot;Retraits&quot;);&#xa;        menuItemTontine = new JMenuItem(&quot;Tontine&quot;);&#xa;        menuItemMouvements = new JMenuItem(&quot;Mouvements&quot;);&#xa;        menuItemModification= new JMenuItem(&quot;Modifier&quot;);&#xa;        menuItemEpargnes.addActionListener(this);&#xa;        menuItemRetraits.addActionListener(this);&#xa;        menuItemTontine.addActionListener(this);&#xa;        menuItemMouvements.addActionListener(this);&#xa;        menuItemModification.addActionListener(this);&#xa;        popupMenu.add (menuItemEpargnes);&#xa;        popupMenu.add (menuItemRetraits);&#xa;        popupMenu.add(menuItemTontine);&#xa;        popupMenu.add(menuItemMouvements);&#xa;        popupMenu.add(menuItemModification);&#xa;popupMenu.addPopupMenuListener(new PopupMenuListener() {&#xa;&#xa;            @Override&#xa;            public void popupMenuWillBecomeVisible(PopupMenuEvent e) {&#xa;                SwingUtilities.invokeLater(new Runnable() {&#xa;                    @Override&#xa;                    public void run() {&#xa;                        int rowAtPoint = jTable1.rowAtPoint(SwingUtilities.convertPoint(popupMenu, new Point(0, 0), jTable1));&#xa;                        if (rowAtPoint &gt; -1) {&#xa;                            jTable1.setRowSelectionInterval(rowAtPoint, rowAtPoint);&#xa;                        }&#xa;                    }&#xa;                });&#xa;            }&#xa;&#xa;            @Override&#xa;            public void popupMenuWillBecomeInvisible(PopupMenuEvent e) {&#xa;                // TODO Auto-generated method stub&#xa;&#xa;            }&#xa;&#xa;            @Override&#xa;            public void popupMenuCanceled(PopupMenuEvent e) {&#xa;                // TODO Auto-generated method stub&#xa;&#xa;            }&#xa;        });        &#xa;        &#xa;// JFrae &#xa;//BufferedImage bf = ImageIO.read(new File(getClass().getResource(&quot;/nehemie_mutuelle/pexels-photo4.jpg&quot;).getPath()));&#xa;BufferedImage bf = ImageIO.read(main.class.getClass().getResourceAsStream(&quot;/nehemie_mutuelle/pexels-photo4.jpg&quot;));        &#xa;this.setContentPane(new backImage(bf));&#xa;&#xa;jTable1.setAutoCreateRowSorter(true);&#xa;jTable1.setComponentPopupMenu(popupMenu);&#xa;//DefaultTableCellRenderer rigren = new DefaultTableCellRenderer();&#xa;rigren.setHorizontalAlignment(SwingConstants.LEFT);&#xa;//DefaultTableCellRenderer rigren2 = new DefaultTableCellRenderer();&#xa;rigren2.setHorizontalAlignment(SwingConstants.LEFT);&#xa;//Font fo =new Font(jTable1.getFont().getName(), Font.BOLD, 15);&#xa;&#xa;rigren2.setFont(jTable1.getFont().deriveFont(Font.BOLD));&#xa;rigren.setForeground (Color.BLUE);&#xa;jTable1.getColumnModel().getColumn(0).setCellRenderer(rigren);&#xa;jTable1.getColumnModel().getColumn(1).setCellRenderer(rigren2);&#xa;// table widths &#xa;jTable1.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);&#xa;jTable1.setFillsViewportHeight(true);&#xa;jTable1.setPreferredScrollableViewportSize(new Dimension(1000,130));&#xa;jTable1.getColumnModel().getColumn(0).setPreferredWidth(50);&#xa;jTable1.getColumnModel().getColumn(1).setPreferredWidth(220);&#xa;jTable1.getColumnModel().getColumn(2).setPreferredWidth(320);&#xa;jTable1.getColumnModel().getColumn(3).setPreferredWidth(230);&#xa;jTable1.getColumnModel().getColumn(4).setPreferredWidth(210);&#xa;&#xa;//jTable1.getColumnModel().getColumn(3).setPreferredWidth(170);&#xa;//jTable1.setSelectionMode(1);&#xa;//DefaultTableCellRenderer rigren2=  new MyNewCellRenderer(); &#xa;//rigren2.setHorizontalAlignment(SwingConstants.LEFT)&#xa;//jTable1.setDefaultRenderer(Object.class, rigren2);">
+              <Connection code="new javax.swing.table.DefaultTableModel(data,header){&#xa;&#xa;    Class[] types = {Integer.class, String.class, String.class,&#xa;        String.class,  String.class  };&#xa;&#xa;    @Override&#xa;    public Class getColumnClass(int columnIndex) {&#xa;        return this.types[columnIndex];&#xa;    }&#xa;&#xa;}" type="code"/>
+            </Property>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor" preCode="jTable1.getSelectionModel().addListSelectionListener(new ListSelectionListener(){&#xa;    @Override&#xa;    public void valueChanged(ListSelectionEvent event){&#xa;        if (jTable1.getSelectedRow() &gt; -1){&#xa;             popupMenu.getComponent(0).setEnabled(true);&#xa;             popupMenu.getComponent(1).setEnabled(true);&#xa;             popupMenu.getComponent(2).setEnabled(true);&#xa;             popupMenu.getComponent(3).setEnabled(true);&#xa;             popupMenu.getComponent(4).setEnabled(true);&#xa;            int row=jTable1.getSelectedRow();&#xa;        &#xa;        //      String product_type=jTable1.getModel().getValueAt(row, 3).toString();&#xa;                String product_type=jTable1.getValueAt(row, 3).toString();&#xa;&#xa;              System.out.println(&quot;type de produit&quot; + product_type);&#xa;              if(product_type.equalsIgnoreCase(&quot;Epargne  Enfant&quot;) ||product_type.equalsIgnoreCase(&quot;Epargne Enfant&quot;) || product_type.equalsIgnoreCase(&quot;Epargne Adulte&quot;) || product_type.equalsIgnoreCase(&quot;Epargne Pers Morale&quot;)) {&#xa;                                 popupMenu.getComponent(2).setEnabled(false);&#xa;                                 System.out.println(true);&#xa;              }&#xa;               if(product_type.equalsIgnoreCase(&quot;Tontine Enfant&quot;) ||  product_type.equalsIgnoreCase(&quot;Tontine  Enfant&quot;)|| product_type.equalsIgnoreCase(&quot;Tontine Adulte&quot;) || product_type.equalsIgnoreCase(&quot;Tontine Pers Morale&quot;)) {&#xa;                                 popupMenu.getComponent(0).setEnabled(false);&#xa;                                 popupMenu.getComponent(1).setEnabled(false);&#xa;                                 popupMenu.getComponent(3).setEnabled(false);&#xa;&#xa;              }&#xa;             &#xa;        }&#xa;}&#xa;}&#xa;&#xa;&#xa;&#xa;);">
+              <TableColumnModel selectionModel="0">
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+              </TableColumnModel>
+            </Property>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="header.add(&quot;ID&quot;); &#xa;header.add(&quot;Nom&quot;);&#xa;header.add(&quot;Pr&#xe9;nom&quot;); &#xa;header.add(&quot;Type_adh&#xe9;sion&quot;); &#xa;header.add(&quot;Part Sociale&quot;); &#xa;try {&#xa;            // TODO add your handling code here:&#xa;            data=getMembres();&#xa;        } catch (Exception ex) {&#xa;            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);&#xa;        }&#xa;//jTable1.setModel(new javax.swing.table.DefaultTableModel(&#xa;//            data,header&#xa;//        ));&#xa;System.out.println(data);&#xa;&#xa;&#xa;  &#xa;&#xa;// new javax.swing.table.DefaultTableModel(&#xa;//    data,header"/>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jTable1.getTableHeader().setBackground(Color.LIGHT_GRAY);"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JTextField" name="jTextField1">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new JSearchTextField()"/>
+        <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="try {"/>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="} catch (Exception ex) {&#xa;                     Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);&#xa;                }"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="recherche:"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JPanel" name="jPanel5">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jLabel1" max="32767" attributes="0"/>
+                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton10" alignment="0" pref="170" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" pref="171" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jButton10" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="// print first column value from selected row&#xa;            //System.out.println(jTable.getValueAt(jTable.getSelectedRow(), 0).toString());&#xa;&#xa;//jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource(&quot;blnk.png&quot;)));&#xa;jTable1.getSelectionModel().addListSelectionListener(new ListSelectionListener() {&#xa;    @Override&#xa;    &#xa;    public void valueChanged(ListSelectionEvent event) {&#xa;&#xa;        if (jTable1.getSelectedRow() &gt; -1 &amp;&amp; ((int) jTable1.getValueAt(jTable1.getSelectedRow(), 0)) &lt;= listphoto.size()) {  //&amp;&amp; jTable1.getSelectedRow() &lt;= (listphoto.size()-1)&#xa;           System.out.println(&quot;listvaluechanged&quot;);&#xa;           String photo =(String) listphoto.get( ((int) jTable1.getValueAt(jTable1.getSelectedRow(), 0)) -1);&#xa;File f = new File(photo);&#xa;if(f.exists() &amp;&amp; !f.isDirectory()) { &#xa;    // do something&#xa;&#xa;&#xa; Image temp = new ImageIcon(photo).getImage().getScaledInstance(180, 180, Image.SCALE_SMOOTH);&#xa; //          try {&#xa;//BufferedImage image = ImageIO.read(getClass().getResource(photo));&#xa;//ImageIcon icon = new ImageIcon(image);&#xa;jLabel1.setIcon(new javax.swing.ImageIcon(temp));&#xa;//jLabel1.setIcon(icon);&#xa;//} catch(IOException ex){&#xa;//        System.out.println (ex.toString());&#xa;//        System.out.println(&quot;Could not find file &quot; + photo);&#xa;//    }&#xa;} else {&#xa;jLabel1.setIcon(null);&#xa;}&#xa;            // print first column value from selected row&#xa;            //System.out.println(jTable.getValueAt(jTable.getSelectedRow(), 0).toString());&#xa;//jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource(photo)));&#xa;        }  else {&#xa;          jLabel1.setIcon(null);      &#xa;}&#xa;    }&#xa;});"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Photo"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton10">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Uploader la photo"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JSeparator" name="jSeparator1">
+      <Properties>
+        <Property name="orientation" type="int" value="1"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
+            <BevelBorder/>
+          </Border>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JSeparator(SwingConstants.VERTICAL)"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JToolBar" name="jToolBar1">
+      <Properties>
+        <Property name="rollover" type="boolean" value="true"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+    </Container>
+    <Component class="nehemie_mutuelle.JStatusBar" name="jStatusBar1">
+      <Properties>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[200, 6]"/>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[200, 23]"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="JLabel leftLabel = new JLabel(&#xa;             &quot;Your application is running.&quot;);&#xa;        jStatusBar1.setLeftComponent(leftLabel);&#xa;        leftLabel2=new JLabel(jTable1.getRowCount()+&quot; membres&quot;);&#xa;        jStatusBar1.addRightComponent(leftLabel2);&#xa;        final JLabel dateLabel = new JLabel();&#xa;        dateLabel.setHorizontalAlignment(JLabel.CENTER);&#xa;        jStatusBar1.addRightComponent(dateLabel);&#xa; &#xa;        final JLabel timeLabel = new JLabel();&#xa;        timeLabel.setHorizontalAlignment(JLabel.CENTER);&#xa;        jStatusBar1.addRightComponent(timeLabel);&#xa;        timerThread = new TimerThread(dateLabel, timeLabel);&#xa;        timerThread.start();&#xa; "/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/nehemie_mutuelle/Liste.png"/>
+        </Property>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

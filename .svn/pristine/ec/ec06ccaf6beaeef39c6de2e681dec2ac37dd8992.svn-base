@@ -1,0 +1,64 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package  nehemie_mutuelle.loan;
+
+import java.awt.Dialog;
+import java.awt.Frame;
+import javax.swing.JFrame;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
+
+/**
+ *
+ * @author ucao
+ */
+public class Test {
+    public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedLookAndFeelException {
+//        Dialog dia;
+//        JFrame owner= new JFrame("ffffff");
+//        WizardPanelDescriptor jf1= new WizardPanelDescriptor();
+//        WizardPanelDescriptor jf2= new WizardPanelDescriptor();
+//        WizardPanelDescriptor jf3= new WizardPanelDescriptor();
+//        dia = new Dialog(owner);
+//        Wizard wiz= new Wizard(dia);
+//        wiz.registerWizardPanel(new String("1"), jf1);
+//        wiz.registerWizardPanel(new String("1"), jf2);
+//        wiz.registerWizardPanel(new String("1"), jf3);
+//                wiz.showModalDialog();
+//    }
+    
+        Wizard wizard = new Wizard();
+        wizard.getDialog().setTitle("Test Wizard Dialog");
+        
+        WizardPanelDescriptor descriptor1 = new TestPanel1Descriptor();
+        wizard.registerWizardPanel(TestPanel1Descriptor.IDENTIFIER, descriptor1);
+        
+        WizardPanelDescriptor automDesc = new CreditPanelAutom1Descriptor();
+         wizard.registerWizardPanel(CreditPanelAutom1Descriptor.IDENTIFIER, automDesc);
+         
+         WizardPanelDescriptor automDesc2 = new CreditPanelAutom2Descriptor();
+         wizard.registerWizardPanel(CreditPanelAutom2Descriptor.IDENTIFIER, automDesc2);
+
+        WizardPanelDescriptor descriptor2 = new TestPanel2Descriptor();
+        wizard.registerWizardPanel(TestPanel2Descriptor.IDENTIFIER, descriptor2);
+
+        WizardPanelDescriptor descriptor3 = new TestPanel3Descriptor();
+        wizard.registerWizardPanel(TestPanel3Descriptor.IDENTIFIER, descriptor3);
+        
+        wizard.setCurrentPanel(TestPanel1Descriptor.IDENTIFIER);
+        
+        int ret = wizard.showModalDialog();
+        
+        System.out.println("Dialog return code is (0=Finish,1=Cancel,2=Error): " + ret);
+ //       System.out.println("Second panel selection is: " + 
+//            (((TestPanel2)descriptor2.getPanelComponent()).getRadioButtonSelected()));
+        
+        UIManager.setLookAndFeel(
+            UIManager.getSystemLookAndFeelClassName());
+        
+        System.exit(0);
+}
+}    

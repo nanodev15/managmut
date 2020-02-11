@@ -1,0 +1,2119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.5" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+          <Component id="jTabbedPane1" alignment="0" pref="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jLabel1" min="-2" pref="65" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jTabbedPane1" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/nehemie_mutuelle/Bilan_tontine.png"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JTabbedPane" name="jTabbedPane1">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="" noResource="true"/>
+        <Property name="opaque" type="boolean" value="true"/>
+      </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value=""/>
+      </AccessibilityProperties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="jTabbedPane1StateChanged"/>
+      </Events>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanel1">
+          <Properties>
+            <Property name="verifyInputWhenFocusTarget" type="boolean" value="false"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Bilan annuel">
+                <Property name="tabTitle" type="java.lang.String" value="Bilan annuel"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace pref="22" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jComboBox1" min="-2" pref="269" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jScrollPane1" min="-2" pref="769" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="32" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="275" max="-2" attributes="0"/>
+                      <EmptySpace pref="145" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTable" name="jTable1">
+                  <Properties>
+                    <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    out,&#xa;    new String [] {&#xa;        &quot;Mois&quot;, &quot;Commission sur Tontine&quot;, &quot;Cotisation&quot;, &quot;Retraits&quot;, &quot;Solde&quot;&#xa;    }&#xa;) {&#xa;    boolean[] canEdit = new boolean [] {&#xa;        false, false, false, false, false&#xa;    };&#xa;&#xa;    Class[] types = {Date.class, Double.class, Double.class,&#xa;        Double.class, Double.class};&#xa;&#xa;    @Override&#xa;    public Class getColumnClass(int columnIndex) {&#xa;        return this.types[columnIndex];&#xa;    }&#xa;&#xa;    public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;        return canEdit [columnIndex];&#xa;    }&#xa;    // nouveau ajout&#xa;    // public void setValueAt(Object value, int row, int col) {&#xa;        //     Vector rowVector = (Vector) dataVector.elementAt(row);&#xa;        //     if (col == TOTAL_COLUMN) {&#xa;            //          Double d = null;&#xa;            //         if (value instanceof Double) {&#xa;                //            d = (Double) value;&#xa;                //         } else {&#xa;                //            try {&#xa;                    //                 d = new Double(((Number) formatter&#xa;                        //                     .parse((String) value)).doubleValue());&#xa;                //         } catch (ParseException ex) {&#xa;                //            d = new Double(0.0);&#xa;                //         }&#xa;            //    }&#xa;        //      rowVector.setElementAt(d, col);&#xa;        //  } else {&#xa;        //      rowVector.setElementAt(value, col);&#xa;        //  }}&#xa;&#xa;}" type="code"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTable()"/>
+                    <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="//sorter &#xa;sorter = new TableRowSorter&lt;DefaultTableModel&gt;((DefaultTableModel)jTable1.getModel());&#xa;jTable1.setRowSorter(sorter);&#xa;&#xa;&#xa;//jTable1.getModel().addTableModelListener(new TableModelListener() {&#xa;&#xa;//     public void tableChanged(TableModelEvent e) {&#xa;//          totalrow= jTable1.getRowCount() -1;&#xa;//          reCalcurate(jTable1.getModel());&#xa;//      }&#xa;//    });&#xa;&#xa;TableCellRenderer tableCellRenderer = new DefaultTableCellRenderer() {&#xa;&#xa;    SimpleDateFormat f = new SimpleDateFormat(&quot;MMM yyyy&quot;);&#xa;&#xa;    public Component getTableCellRendererComponent(JTable table,&#xa;            Object value, boolean isSelected, boolean hasFocus,&#xa;            int row, int column) {&#xa;        if( value instanceof Date) {&#xa;            value = f.format(value);&#xa;        } else {&#xa;             value = String.format(&quot;%.0f&quot;, value);&#xa;        } &#xa;        &#xa;        if (column == 0 &amp;&amp; row == 12) value = &quot;Total&quot;;&#xa;        if (column == 0 &amp;&amp; jComboBox1.getSelectedIndex()== jComboBox1.getItemCount()-1 &amp;&amp; row == jTable1.getRowCount() -1) value = &quot;Total&quot;;&#xa;        Component c = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);&#xa;        &#xa;         if (row == 12 || ( jComboBox1.getSelectedIndex()== jComboBox1.getItemCount()-1 &amp;&amp; row == (jTable1.getRowCount()-1))) {c.setBackground(LightYellow);} else {&#xa;            c.setBackground(Color.WHITE);&#xa;        }&#xa;        &#xa;         if(isSelected) {&#xa;            c.setForeground(Color.BLACK);&#xa;        }&#xa;         &#xa;        return c;&#xa;    }&#xa;};&#xa;&#xa;// pasted&#xa;&#xa;&#xa;TableCellRenderer tableCellRenderer4 = new DefaultTableCellRenderer() {&#xa;&#xa;&#xa;    public Component getTableCellRendererComponent(JTable table,&#xa;            Object value, boolean isSelected, boolean hasFocus,&#xa;            int row, int column) {&#xa;     &#xa;        value =  String.format(&quot;%.0f&quot;, value);&#xa;        Component c = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);&#xa;&#xa;        if (row == 12 || ( jComboBox1.getSelectedIndex()== jComboBox1.getItemCount()-1 &amp;&amp; row == jTable1.getRowCount() -1)) {c.setBackground(LightYellow);} else {&#xa;            c.setBackground(Color.WHITE); &#xa;        }&#xa;        &#xa;        if(isSelected){&#xa;            c.setForeground(Color.BLACK);&#xa;        }&#xa;        //if (row == 12) { jTable1. }&#xa;     //   if (jComboBox1.getSelectedIndex()== jComboBox1.getItemCount()-1 &amp;&amp; row == jTable1.getRowCount() -1)  setBackground(Color.GRAY);  &#xa;     //   return super.getTableCellRendererComponent(table, value, isSelected,&#xa;     //           hasFocus, row, column);&#xa;        &#xa;        return c;&#xa;    }&#xa;};&#xa;&#xa;&#xa;&#xa;jTable1.getColumnModel().getColumn(0).setCellRenderer(tableCellRenderer);&#xa;jTable1.getColumnModel().getColumn(1).setCellRenderer(tableCellRenderer4);&#xa;jTable1.getColumnModel().getColumn(2).setCellRenderer(tableCellRenderer4);&#xa;jTable1.getColumnModel().getColumn(3).setCellRenderer(tableCellRenderer4);&#xa;jTable1.getColumnModel().getColumn(4).setCellRenderer(tableCellRenderer4);&#xa;jTable1.setSelectionBackground(Color.BLUE);"/>
+                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="conn = Connect.ConnectDb();&#xa;ResultSet rs0 = null;&#xa;    try {&#xa;            pre = conn.prepareStatement(&quot;SELECT MIN(DateTontine), MAX(DateTontine) FROM Tontine&quot;);&#xa;            rs0 = pre.executeQuery();&#xa;             IntializeDate dateini = new IntializeDate();&#xa;              &#xa;&#xa;            while (rs0.next()) {&#xa;                startDate=rs0.getDate(1);&#xa;                endDate=rs0.getDate(2);&#xa;            }&#xa;&#xa;            if (dateini.change) {&#xa;                   &#xa;                if (dateini.initdate.after(startDate)) startDate = dateini.initdate;&#xa;&#xa;            }&#xa;       } catch (SQLException ex) {&#xa;            Logger.getLogger(TontineSynthese.class.getName()).log(Level.SEVERE, null, ex);&#xa;        }   finally {&#xa;             &#xa;            try {&#xa;           if (rs0 !=null) &#xa;            rs0.close();&#xa;           &#xa;           if (pre !=null) &#xa;            pre.close();&#xa;           &#xa;           if (conn !=null)&#xa;            conn.close();&#xa;            } catch (SQLException ex) {&#xa;  Logger.getLogger(TontineSynthese.class.getName()).log(Level.SEVERE, null, ex);&#xa;            }&#xa;       }&#xa;&#xa;&#xa;try {&#xa;            // TODO add your handling code here:&#xa;            data=getSynthese();&#xa;        } catch (Exception ex) {&#xa;            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);&#xa;        }&#xa;Object[][] out = to2DimArray(data);&#xa;&#xa;//jTable1.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);&#xa;jTable1.setFillsViewportHeight(true);"/>
+                  </AuxValues>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="jLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Choix de l&apos;ann&#xe9;e:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="jComboBox1">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="4">
+                    <StringItem index="0" value="Exercice 2011"/>
+                    <StringItem index="1" value="Exercice 2012"/>
+                    <StringItem index="2" value="Exercice 2013"/>
+                    <StringItem index="3" value="Exercice 2014"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="jComboBox1ItemStateChanged"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="int minyear=0;&#xa;int maxyear=0;&#xa;conn = Connect.ConnectDb();&#xa;ResultSet rs = null;&#xa;    try {&#xa;            pre = conn.prepareStatement(&quot;SELECT MIN(YEAR(DateTontine)) as minyear, MAX(YEAR(DateTontine)) as maxyear FROM Tontine&quot;);&#xa;            rs = pre.executeQuery();&#xa;            while (rs.next()) {&#xa;                //minyear=rs.getInt(1);&#xa;                //maxyear=rs.getInt(2);&#xa;                maxyear=Calendar.getInstance().get(Calendar.YEAR);  // m&#xe9;thode &#xe0; revoir &#xa;                if(maxyear &lt; rs.getInt(2)) maxyear=rs.getInt(2);&#xa;                &#xa;&#xa;                Calendar calendar = Calendar.getInstance();&#xa;                calendar.setTime(startDate);&#xa;                minyear = calendar.get(Calendar.YEAR); &#xa;            }&#xa;       } catch (SQLException ex) {&#xa;            Logger.getLogger(TontineSynthese.class.getName()).log(Level.SEVERE, null, ex);&#xa;        }   finally {&#xa;             &#xa;            try {&#xa;           if (rs !=null) &#xa;            rs.close();&#xa;           &#xa;           if (pre !=null) &#xa;            pre.close();&#xa;           &#xa;           if (conn !=null)&#xa;            conn.close();&#xa;            } catch (SQLException ex) {&#xa;  Logger.getLogger(TontineSynthese.class.getName()).log(Level.SEVERE, null, ex);&#xa;            }&#xa;       }     &#xa;          // Connect.close(conn, rs, pre);&#xa;        &#xa;&#xa;if (minyear !=0 &amp;&amp; maxyear !=0){&#xa;jComboBox1.removeAllItems();&#xa;for (int i=minyear; i&lt;=maxyear; i++) {&#xa;jComboBox1.addItem(&quot;Exercice &quot;+i);&#xa;}&#xa;}"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel2">
+          <Events>
+            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jPanel2FocusGained"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Versements">
+                <Property name="tabTitle" type="java.lang.String" value="Versements"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jTabbedPane2" alignment="1" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                              <Component id="jComboBox2" min="-2" pref="256" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jComboBox2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jTabbedPane2" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JTabbedPane" name="jTabbedPane2">
+              <Properties>
+                <Property name="tabPlacement" type="int" value="3"/>
+              </Properties>
+              <Events>
+                <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="jTabbedPane2StateChanged"/>
+              </Events>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="jPanel4">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="JAN">
+                        <Property name="tabTitle" type="java.lang.String" value="JAN"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane2" pref="767" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane2" pref="320" max="32767" attributes="0"/>
+                              <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTable" name="jTable2">
+                          <Properties>
+                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                              <Table columnCount="13" rowCount="6">
+                                <Column editable="true" title="N&#xb0;" type="java.lang.Integer"/>
+                                <Column editable="true" title="N&#xb0; Carnet" type="java.lang.String">
+                                  <Data value="df"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                </Column>
+                                <Column editable="true" title="Noms &amp; Pr&#xe9;noms" type="java.lang.String">
+                                  <Data value="df"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                </Column>
+                                <Column editable="true" title="Report" type="java.lang.Double"/>
+                                <Column editable="true" title="Mise" type="java.lang.Integer"/>
+                                <Column editable="true" title="Retenue" type="java.lang.Integer"/>
+                                <Column editable="true" title="Cot. /31" type="java.lang.Double"/>
+                                <Column editable="true" title="Pourcentage" type="java.lang.Object">
+                                  <Data value="50.4534"/>
+                                  <Data value="20.58"/>
+                                  <Data value="10.2585"/>
+                                  <Data value="85.258"/>
+                                  <Data value="69.258"/>
+                                  <Data value="3258.25"/>
+                                </Column>
+                                <Column editable="true" title="Total" type="java.lang.Double"/>
+                                <Column editable="true" title="Retraits" type="java.lang.Double"/>
+                                <Column editable="true" title="Solde" type="java.lang.Double"/>
+                                <Column editable="true" title="IdEpargnant" type="java.lang.Integer"/>
+                                <Column editable="true" title="TypeEpargnant" type="java.lang.String"/>
+                              </Table>
+                            </Property>
+                            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                              <TableColumnModel selectionModel="0">
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                              </TableColumnModel>
+                            </Property>
+                            <Property name="surrendersFocusOnKeystroke" type="boolean" value="true"/>
+                            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                            </Property>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTable() {&#xa;    public boolean getScrollableTracksViewportWidth(){&#xa;        return getPreferredSize().width &lt; getParent().getWidth();&#xa;    }&#xa;}"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jTable2.getColumnModel().getColumn(0).setPreferredWidth(30);&#xa;jTable2.getColumnModel().getColumn(1).setPreferredWidth(90);&#xa;jTable2.getColumnModel().getColumn(2).setPreferredWidth(150);&#xa;jTable2.getColumnModel().getColumn(3).setPreferredWidth(100);&#xa;jTable2.getColumnModel().getColumn(4).setPreferredWidth(100);&#xa;jTable2.getColumnModel().getColumn(5).setPreferredWidth(90);&#xa;jTable2.getColumnModel().getColumn(6).setPreferredWidth(100);&#xa;jTable2.getColumnModel().getColumn(7).setPreferredWidth(90);&#xa;jTable2.getColumnModel().getColumn(8).setPreferredWidth(80);&#xa;jTable2.getColumnModel().getColumn(9).setPreferredWidth(80);&#xa;jTable2.getColumnModel().getColumn(10).setPreferredWidth(80);&#xa;&#xa;&#xa;&#xa;&#xa;//jTable2.getColumnModel().getColumn(11).setMaxWidth(0);&#xa;//jTable2.getColumnModel().getColumn(12).setMaxWidth(0);&#xa;//jTable2.getColumnModel().getColumn(11).setMinWidth(0);&#xa;//jTable2.getColumnModel().getColumn(12).setMinWidth(0);&#xa;// Progress bar renderer &#xa;    IndicatorCellRenderer renderer = new IndicatorCellRenderer(MIN, MAX);&#xa;    renderer.setStringPainted(true);&#xa;    renderer.setBackground(jTable2.getBackground());&#xa;&#xa;    // set limit value and fill color&#xa;    Hashtable limitColors = new Hashtable();&#xa;    limitColors.put(new Integer(0), Color.green);&#xa;    limitColors.put(new Integer(60), Color.yellow);&#xa;    limitColors.put(new Integer(80), Color.red);&#xa;    renderer.setLimits(limitColors);&#xa; //   jTable2.getColumnModel().getColumn(7).setCellRenderer(renderer);&#xa;&#xa;jScrollPane2= new FrozenTablePane(jTable2, 3);"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jTable2.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);&#xa;jTable2.setFillsViewportHeight(true);&#xa;jTable2.setPreferredScrollableViewportSize(new Dimension(1000,70));"/>
+                          </AuxValues>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel5">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="FEV">
+                        <Property name="tabTitle" type="java.lang.String" value="FEV"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane3" alignment="0" pref="791" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane3" alignment="0" pref="371" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTable" name="jTable3">
+                          <Properties>
+                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                              <Table columnCount="13" rowCount="6">
+                                <Column editable="true" title="N&#xb0;" type="java.lang.Integer"/>
+                                <Column editable="true" title="N&#xb0; Carnet" type="java.lang.String">
+                                  <Data value="df"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                </Column>
+                                <Column editable="true" title="Noms &amp; Pr&#xe9;noms" type="java.lang.String">
+                                  <Data value="df"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                </Column>
+                                <Column editable="true" title="Report" type="java.lang.Double"/>
+                                <Column editable="true" title="Mise" type="java.lang.Integer"/>
+                                <Column editable="true" title="Retenue" type="java.lang.Integer"/>
+                                <Column editable="true" title="Cot. /31" type="java.lang.Double"/>
+                                <Column editable="true" title="Pourcentage" type="java.lang.Object">
+                                  <Data value="50.4534"/>
+                                  <Data value="20.58"/>
+                                  <Data value="10.2585"/>
+                                  <Data value="85.258"/>
+                                  <Data value="69.258"/>
+                                  <Data value="3258.25"/>
+                                </Column>
+                                <Column editable="true" title="Total" type="java.lang.Double"/>
+                                <Column editable="true" title="Retraits" type="java.lang.Double"/>
+                                <Column editable="true" title="Solde" type="java.lang.Double"/>
+                                <Column editable="true" title="IdEpargnant" type="java.lang.Integer"/>
+                                <Column editable="true" title="TypeEpargnant" type="java.lang.String"/>
+                              </Table>
+                            </Property>
+                            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                              <TableColumnModel selectionModel="0">
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                              </TableColumnModel>
+                            </Property>
+                            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                            </Property>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTable() {&#xa;    public boolean getScrollableTracksViewportWidth(){&#xa;        return getPreferredSize().width &lt; getParent().getWidth();&#xa;    }&#xa;}"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jTable3.getColumnModel().getColumn(0).setPreferredWidth(30);&#xa;jTable3.getColumnModel().getColumn(1).setPreferredWidth(90);&#xa;jTable3.getColumnModel().getColumn(2).setPreferredWidth(150);&#xa;jTable3.getColumnModel().getColumn(3).setPreferredWidth(100);&#xa;jTable3.getColumnModel().getColumn(4).setPreferredWidth(100);&#xa;jTable3.getColumnModel().getColumn(5).setPreferredWidth(90);&#xa;jTable3.getColumnModel().getColumn(6).setPreferredWidth(100);&#xa;jTable3.getColumnModel().getColumn(7).setPreferredWidth(90);&#xa;jTable3.getColumnModel().getColumn(8).setPreferredWidth(80);&#xa;jTable3.getColumnModel().getColumn(9).setPreferredWidth(80);&#xa;jTable3.getColumnModel().getColumn(10).setPreferredWidth(80);&#xa;&#xa;&#xa;jTable3.getColumnModel().getColumn(11).setMaxWidth(0);&#xa;jTable3.getColumnModel().getColumn(12).setMaxWidth(0);&#xa;jTable3.getColumnModel().getColumn(11).setMinWidth(0);&#xa;jTable3.getColumnModel().getColumn(12).setMinWidth(0);&#xa;&#xa;// Progress bar renderer &#xa;    renderer = new IndicatorCellRenderer(MIN, MAX);&#xa;    renderer.setStringPainted(true);&#xa;    renderer.setBackground(jTable2.getBackground());&#xa;&#xa;    // set limit value and fill color&#xa;    limitColors = new Hashtable();&#xa;    limitColors.put(new Integer(0), Color.green);&#xa;    limitColors.put(new Integer(60), Color.yellow);&#xa;    limitColors.put(new Integer(80), Color.red);&#xa;    renderer.setLimits(limitColors);&#xa;    System.out.println(&quot;dfdfd column model&quot;+jTable2.getColumnModel().getColumnCount());&#xa;    jTable3.getColumnModel().getColumn(7).setCellRenderer(renderer);&#xa;&#xa;jScrollPane3= new FrozenTablePane(jTable3, 3);"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jTable3.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);&#xa;jTable3.setFillsViewportHeight(true);&#xa;jTable3.setPreferredScrollableViewportSize(new Dimension(1000,70));"/>
+                          </AuxValues>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel6">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="MAR">
+                        <Property name="tabTitle" type="java.lang.String" value="MAR"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane4" alignment="0" pref="791" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane4" alignment="0" pref="371" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane4">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTable" name="jTable4">
+                          <Properties>
+                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                              <Table columnCount="13" rowCount="6">
+                                <Column editable="true" title="N&#xb0;" type="java.lang.Integer"/>
+                                <Column editable="true" title="N&#xb0; Carnet" type="java.lang.String">
+                                  <Data value="df"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                </Column>
+                                <Column editable="true" title="Noms &amp; Pr&#xe9;noms" type="java.lang.String">
+                                  <Data value="df"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                </Column>
+                                <Column editable="true" title="Report" type="java.lang.Double"/>
+                                <Column editable="true" title="Mise" type="java.lang.Integer"/>
+                                <Column editable="true" title="Retenue" type="java.lang.Integer"/>
+                                <Column editable="true" title="Cot. /31" type="java.lang.Double"/>
+                                <Column editable="true" title="Pourcentage" type="java.lang.Object">
+                                  <Data value="50.4534"/>
+                                  <Data value="20.58"/>
+                                  <Data value="10.2585"/>
+                                  <Data value="85.258"/>
+                                  <Data value="69.258"/>
+                                  <Data value="3258.25"/>
+                                </Column>
+                                <Column editable="true" title="Total" type="java.lang.Double"/>
+                                <Column editable="true" title="Retraits" type="java.lang.Double"/>
+                                <Column editable="true" title="Solde" type="java.lang.Double"/>
+                                <Column editable="true" title="IdEpargnant" type="java.lang.Integer"/>
+                                <Column editable="true" title="TypeEpargnant" type="java.lang.String"/>
+                              </Table>
+                            </Property>
+                            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                              <TableColumnModel selectionModel="0">
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                              </TableColumnModel>
+                            </Property>
+                            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                            </Property>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTable() {&#xa;    public boolean getScrollableTracksViewportWidth(){&#xa;        return getPreferredSize().width &lt; getParent().getWidth();&#xa;    }&#xa;}"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jTable4.getColumnModel().getColumn(0).setPreferredWidth(30);&#xa;jTable4.getColumnModel().getColumn(1).setPreferredWidth(90);&#xa;jTable4.getColumnModel().getColumn(2).setPreferredWidth(150);&#xa;jTable4.getColumnModel().getColumn(3).setPreferredWidth(100);&#xa;jTable4.getColumnModel().getColumn(4).setPreferredWidth(100);&#xa;jTable4.getColumnModel().getColumn(5).setPreferredWidth(90);&#xa;jTable4.getColumnModel().getColumn(6).setPreferredWidth(100);&#xa;jTable4.getColumnModel().getColumn(7).setPreferredWidth(90);&#xa;jTable4.getColumnModel().getColumn(8).setPreferredWidth(80);&#xa;jTable4.getColumnModel().getColumn(9).setPreferredWidth(80);&#xa;jTable4.getColumnModel().getColumn(10).setPreferredWidth(80);&#xa;&#xa;&#xa;&#xa;jTable4.getColumnModel().getColumn(11).setMaxWidth(0);&#xa;jTable4.getColumnModel().getColumn(12).setMaxWidth(0);&#xa;jTable4.getColumnModel().getColumn(11).setMinWidth(0);&#xa;jTable4.getColumnModel().getColumn(12).setMinWidth(0);&#xa;// Progress bar renderer &#xa;    renderer = new IndicatorCellRenderer(MIN, MAX);&#xa;    renderer.setStringPainted(true);&#xa;    renderer.setBackground(jTable2.getBackground());&#xa;&#xa;    // set limit value and fill color&#xa;    limitColors = new Hashtable();&#xa;    limitColors.put(new Integer(0), Color.green);&#xa;    limitColors.put(new Integer(60), Color.yellow);&#xa;    limitColors.put(new Integer(80), Color.red);&#xa;    renderer.setLimits(limitColors);&#xa;    jTable4.getColumnModel().getColumn(7).setCellRenderer(renderer);&#xa;&#xa;jScrollPane4= new FrozenTablePane(jTable4, 3);"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jTable4.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);&#xa;jTable4.setFillsViewportHeight(true);&#xa;jTable4.setPreferredScrollableViewportSize(new Dimension(1000,70));"/>
+                          </AuxValues>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel7">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="AVR">
+                        <Property name="tabTitle" type="java.lang.String" value="AVR"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane5" alignment="0" pref="791" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane5" alignment="0" pref="371" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane5">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTable" name="jTable5">
+                          <Properties>
+                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                              <Table columnCount="13" rowCount="6">
+                                <Column editable="true" title="N&#xb0;" type="java.lang.Integer"/>
+                                <Column editable="true" title="N&#xb0; Carnet" type="java.lang.String">
+                                  <Data value="df"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                </Column>
+                                <Column editable="true" title="Noms &amp; Pr&#xe9;noms" type="java.lang.String">
+                                  <Data value="df"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                </Column>
+                                <Column editable="true" title="Report" type="java.lang.Double"/>
+                                <Column editable="true" title="Mise" type="java.lang.Integer"/>
+                                <Column editable="true" title="Retenue" type="java.lang.Integer"/>
+                                <Column editable="true" title="Cot. /31" type="java.lang.Double"/>
+                                <Column editable="true" title="Pourcentage" type="java.lang.Object">
+                                  <Data value="50.4534"/>
+                                  <Data value="20.58"/>
+                                  <Data value="10.2585"/>
+                                  <Data value="85.258"/>
+                                  <Data value="69.258"/>
+                                  <Data value="3258.25"/>
+                                </Column>
+                                <Column editable="true" title="Total" type="java.lang.Double"/>
+                                <Column editable="true" title="Retraits" type="java.lang.Double"/>
+                                <Column editable="true" title="Solde" type="java.lang.Double"/>
+                                <Column editable="true" title="IdEpargnant" type="java.lang.Integer"/>
+                                <Column editable="true" title="TypeEpargnant" type="java.lang.String"/>
+                              </Table>
+                            </Property>
+                            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                              <TableColumnModel selectionModel="0">
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                              </TableColumnModel>
+                            </Property>
+                            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                            </Property>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTable() {&#xa;    public boolean getScrollableTracksViewportWidth(){&#xa;        return getPreferredSize().width &lt; getParent().getWidth();&#xa;    }&#xa;}"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jTable5.getColumnModel().getColumn(0).setPreferredWidth(30);&#xa;jTable5.getColumnModel().getColumn(1).setPreferredWidth(90);&#xa;jTable5.getColumnModel().getColumn(2).setPreferredWidth(150);&#xa;jTable5.getColumnModel().getColumn(3).setPreferredWidth(100);&#xa;jTable5.getColumnModel().getColumn(4).setPreferredWidth(100);&#xa;jTable5.getColumnModel().getColumn(5).setPreferredWidth(90);&#xa;jTable5.getColumnModel().getColumn(6).setPreferredWidth(100);&#xa;jTable5.getColumnModel().getColumn(7).setPreferredWidth(90);&#xa;jTable5.getColumnModel().getColumn(8).setPreferredWidth(80);&#xa;jTable5.getColumnModel().getColumn(9).setPreferredWidth(80);&#xa;jTable5.getColumnModel().getColumn(10).setPreferredWidth(80);&#xa;&#xa;jTable5.getColumnModel().getColumn(11).setMaxWidth(0);&#xa;jTable5.getColumnModel().getColumn(12).setMaxWidth(0);&#xa;jTable5.getColumnModel().getColumn(11).setMinWidth(0);&#xa;jTable5.getColumnModel().getColumn(12).setMinWidth(0);&#xa;// Progress bar renderer &#xa;    renderer = new IndicatorCellRenderer(MIN, MAX);&#xa;    renderer.setStringPainted(true);&#xa;    renderer.setBackground(jTable5.getBackground());&#xa;&#xa;    // set limit value and fill color&#xa;    limitColors = new Hashtable();&#xa;    limitColors.put(new Integer(0), Color.green);&#xa;    limitColors.put(new Integer(60), Color.yellow);&#xa;    limitColors.put(new Integer(80), Color.red);&#xa;    renderer.setLimits(limitColors);&#xa;    jTable5.getColumnModel().getColumn(7).setCellRenderer(renderer);&#xa;&#xa;jScrollPane5= new FrozenTablePane(jTable5, 3);"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jTable5.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);&#xa;jTable5.setFillsViewportHeight(true);&#xa;jTable5.setPreferredScrollableViewportSize(new Dimension(1000,70));"/>
+                          </AuxValues>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel8">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="MAI">
+                        <Property name="tabTitle" type="java.lang.String" value="MAI"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane6" alignment="0" pref="791" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane6" alignment="0" pref="371" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane6">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTable" name="jTable6">
+                          <Properties>
+                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                              <Table columnCount="13" rowCount="6">
+                                <Column editable="true" title="N&#xb0;" type="java.lang.Integer"/>
+                                <Column editable="true" title="N&#xb0; Carnet" type="java.lang.String">
+                                  <Data value="df"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                </Column>
+                                <Column editable="true" title="Noms &amp; Pr&#xe9;noms" type="java.lang.String">
+                                  <Data value="df"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                </Column>
+                                <Column editable="true" title="Report" type="java.lang.Double"/>
+                                <Column editable="true" title="Mise" type="java.lang.Integer"/>
+                                <Column editable="true" title="Retenue" type="java.lang.Integer"/>
+                                <Column editable="true" title="Cot. /31" type="java.lang.Double"/>
+                                <Column editable="true" title="Pourcentage" type="java.lang.Object">
+                                  <Data value="50.4534"/>
+                                  <Data value="20.58"/>
+                                  <Data value="10.2585"/>
+                                  <Data value="85.258"/>
+                                  <Data value="69.258"/>
+                                  <Data value="3258.25"/>
+                                </Column>
+                                <Column editable="true" title="Total" type="java.lang.Double"/>
+                                <Column editable="true" title="Retraits" type="java.lang.Double"/>
+                                <Column editable="true" title="Solde" type="java.lang.Double"/>
+                                <Column editable="true" title="" type="java.lang.Integer"/>
+                                <Column editable="true" title="" type="java.lang.String"/>
+                              </Table>
+                            </Property>
+                            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                              <TableColumnModel selectionModel="0">
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                              </TableColumnModel>
+                            </Property>
+                            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                            </Property>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTable() {&#xa;    public boolean getScrollableTracksViewportWidth(){&#xa;        return getPreferredSize().width &lt; getParent().getWidth();&#xa;    }&#xa;}"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jTable6.getColumnModel().getColumn(0).setPreferredWidth(30);&#xa;jTable6.getColumnModel().getColumn(1).setPreferredWidth(90);&#xa;jTable6.getColumnModel().getColumn(2).setPreferredWidth(150);&#xa;jTable6.getColumnModel().getColumn(3).setPreferredWidth(100);&#xa;jTable6.getColumnModel().getColumn(4).setPreferredWidth(100);&#xa;jTable6.getColumnModel().getColumn(5).setPreferredWidth(90);&#xa;jTable6.getColumnModel().getColumn(6).setPreferredWidth(100);&#xa;jTable6.getColumnModel().getColumn(7).setPreferredWidth(90);&#xa;jTable6.getColumnModel().getColumn(8).setPreferredWidth(80);&#xa;jTable6.getColumnModel().getColumn(9).setPreferredWidth(80);&#xa;jTable6.getColumnModel().getColumn(10).setPreferredWidth(80);&#xa;&#xa;jTable6.getColumnModel().getColumn(11).setMinWidth(0);&#xa;jTable6.getColumnModel().getColumn(11).setMaxWidth(0);&#xa;jTable6.getColumnModel().getColumn(12).setMinWidth(0);&#xa;jTable6.getColumnModel().getColumn(12).setMaxWidth(0);&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;// Progress bar renderer &#xa;    renderer = new IndicatorCellRenderer(MIN, MAX);&#xa;    renderer.setStringPainted(true);&#xa;    renderer.setBackground(jTable6.getBackground());&#xa;&#xa;    // set limit value and fill color&#xa;    limitColors = new Hashtable();&#xa;    limitColors.put(new Integer(0), Color.green);&#xa;    limitColors.put(new Integer(60), Color.yellow);&#xa;    limitColors.put(new Integer(80), Color.red);&#xa;    renderer.setLimits(limitColors);&#xa;    jTable6.getColumnModel().getColumn(7).setCellRenderer(renderer);&#xa;&#xa;jScrollPane6= new FrozenTablePane(jTable6, 3);"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jTable6.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);&#xa;jTable6.setFillsViewportHeight(true);&#xa;jTable6.setPreferredScrollableViewportSize(new Dimension(1000,70));"/>
+                          </AuxValues>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel9">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="JUIN">
+                        <Property name="tabTitle" type="java.lang.String" value="JUIN"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane7" alignment="0" pref="791" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane7" alignment="0" pref="371" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane7">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTable" name="jTable7">
+                          <Properties>
+                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                              <Table columnCount="13" rowCount="6">
+                                <Column editable="true" title="N&#xb0;" type="java.lang.Integer"/>
+                                <Column editable="true" title="N&#xb0; Carnet" type="java.lang.String">
+                                  <Data value="df"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                </Column>
+                                <Column editable="true" title="Noms &amp; Pr&#xe9;noms" type="java.lang.String">
+                                  <Data value="df"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                </Column>
+                                <Column editable="true" title="Report" type="java.lang.Double"/>
+                                <Column editable="true" title="Mise" type="java.lang.Integer"/>
+                                <Column editable="true" title="Retenue" type="java.lang.Integer"/>
+                                <Column editable="true" title="Cot. /31" type="java.lang.Double"/>
+                                <Column editable="true" title="Pourcentage" type="java.lang.Object">
+                                  <Data value="50.4534"/>
+                                  <Data value="20.58"/>
+                                  <Data value="10.2585"/>
+                                  <Data value="85.258"/>
+                                  <Data value="69.258"/>
+                                  <Data value="3258.25"/>
+                                </Column>
+                                <Column editable="true" title="Total" type="java.lang.Double"/>
+                                <Column editable="true" title="Retraits" type="java.lang.Double"/>
+                                <Column editable="true" title="Solde" type="java.lang.Double"/>
+                                <Column editable="true" title="IdEpargnant" type="java.lang.Integer"/>
+                                <Column editable="true" title="TypeEpargnant" type="java.lang.String"/>
+                              </Table>
+                            </Property>
+                            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                              <TableColumnModel selectionModel="0">
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                              </TableColumnModel>
+                            </Property>
+                            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                            </Property>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTable() {&#xa;    public boolean getScrollableTracksViewportWidth(){&#xa;        return getPreferredSize().width &lt; getParent().getWidth();&#xa;    }&#xa;}"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jTable7.getColumnModel().getColumn(0).setPreferredWidth(30);&#xa;jTable7.getColumnModel().getColumn(1).setPreferredWidth(90);&#xa;jTable7.getColumnModel().getColumn(2).setPreferredWidth(150);&#xa;jTable7.getColumnModel().getColumn(3).setPreferredWidth(100);&#xa;jTable7.getColumnModel().getColumn(4).setPreferredWidth(100);&#xa;jTable7.getColumnModel().getColumn(5).setPreferredWidth(90);&#xa;jTable7.getColumnModel().getColumn(6).setPreferredWidth(100);&#xa;jTable7.getColumnModel().getColumn(7).setPreferredWidth(90);&#xa;jTable7.getColumnModel().getColumn(8).setPreferredWidth(80);&#xa;jTable7.getColumnModel().getColumn(9).setPreferredWidth(80);&#xa;jTable7.getColumnModel().getColumn(10).setPreferredWidth(80);&#xa;&#xa;jTable7.getColumnModel().getColumn(11).setMaxWidth(0);&#xa;jTable7.getColumnModel().getColumn(12).setMaxWidth(0);&#xa;jTable7.getColumnModel().getColumn(11).setMinWidth(0);&#xa;jTable7.getColumnModel().getColumn(12).setMinWidth(0);&#xa;// Progress bar renderer &#xa;    renderer = new IndicatorCellRenderer(MIN, MAX);&#xa;    renderer.setStringPainted(true);&#xa;    renderer.setBackground(jTable2.getBackground());&#xa;&#xa;    // set limit value and fill color&#xa;    limitColors = new Hashtable();&#xa;    limitColors.put(new Integer(0), Color.green);&#xa;    limitColors.put(new Integer(60), Color.yellow);&#xa;    limitColors.put(new Integer(80), Color.red);&#xa;    renderer.setLimits(limitColors);&#xa;    jTable7.getColumnModel().getColumn(7).setCellRenderer(renderer);&#xa;&#xa;jScrollPane7= new FrozenTablePane(jTable7, 3);"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jTable7.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);&#xa;jTable7.setFillsViewportHeight(true);&#xa;jTable7.setPreferredScrollableViewportSize(new Dimension(1000,70));"/>
+                          </AuxValues>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel10">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="JUIL">
+                        <Property name="tabTitle" type="java.lang.String" value="JUIL"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane8" alignment="0" pref="791" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane8" alignment="0" pref="371" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane8">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTable" name="jTable8">
+                          <Properties>
+                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                              <Table columnCount="13" rowCount="6">
+                                <Column editable="true" title="N&#xb0;" type="java.lang.Integer"/>
+                                <Column editable="true" title="N&#xb0; Carnet" type="java.lang.String">
+                                  <Data value="df"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                </Column>
+                                <Column editable="true" title="Noms &amp; Pr&#xe9;noms" type="java.lang.String">
+                                  <Data value="df"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                </Column>
+                                <Column editable="true" title="Report" type="java.lang.Double"/>
+                                <Column editable="true" title="Mise" type="java.lang.Integer"/>
+                                <Column editable="true" title="Retenue" type="java.lang.Integer"/>
+                                <Column editable="true" title="Cot. /31" type="java.lang.Double"/>
+                                <Column editable="true" title="Pourcentage" type="java.lang.Object">
+                                  <Data value="50.4534"/>
+                                  <Data value="20.58"/>
+                                  <Data value="10.2585"/>
+                                  <Data value="85.258"/>
+                                  <Data value="69.258"/>
+                                  <Data value="3258.25"/>
+                                </Column>
+                                <Column editable="true" title="Total" type="java.lang.Double"/>
+                                <Column editable="true" title="Retraits" type="java.lang.Double"/>
+                                <Column editable="true" title="Solde" type="java.lang.Double"/>
+                                <Column editable="true" title="IdEpargnant" type="java.lang.Integer"/>
+                                <Column editable="true" title="TypeEpargnant" type="java.lang.String"/>
+                              </Table>
+                            </Property>
+                            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                              <TableColumnModel selectionModel="0">
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                              </TableColumnModel>
+                            </Property>
+                            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                            </Property>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTable() {&#xa;    public boolean getScrollableTracksViewportWidth(){&#xa;        return getPreferredSize().width &lt; getParent().getWidth();&#xa;    }&#xa;}"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jTable8.getColumnModel().getColumn(0).setPreferredWidth(30);&#xa;jTable8.getColumnModel().getColumn(1).setPreferredWidth(90);&#xa;jTable8.getColumnModel().getColumn(2).setPreferredWidth(150);&#xa;jTable8.getColumnModel().getColumn(3).setPreferredWidth(100);&#xa;jTable8.getColumnModel().getColumn(4).setPreferredWidth(100);&#xa;jTable8.getColumnModel().getColumn(5).setPreferredWidth(90);&#xa;jTable8.getColumnModel().getColumn(6).setPreferredWidth(100);&#xa;jTable8.getColumnModel().getColumn(7).setPreferredWidth(90);&#xa;jTable8.getColumnModel().getColumn(8).setPreferredWidth(80);&#xa;jTable8.getColumnModel().getColumn(9).setPreferredWidth(80);&#xa;jTable8.getColumnModel().getColumn(10).setPreferredWidth(80);&#xa;&#xa;&#xa;jTable8.getColumnModel().getColumn(11).setMaxWidth(0);&#xa;jTable8.getColumnModel().getColumn(12).setMaxWidth(0);&#xa;jTable8.getColumnModel().getColumn(11).setMinWidth(0);&#xa;jTable8.getColumnModel().getColumn(12).setMinWidth(0);&#xa;// Progress bar renderer &#xa;    renderer = new IndicatorCellRenderer(MIN, MAX);&#xa;    renderer.setStringPainted(true);&#xa;    renderer.setBackground(jTable2.getBackground());&#xa;&#xa;    // set limit value and fill color&#xa;    limitColors = new Hashtable();&#xa;    limitColors.put(new Integer(0), Color.green);&#xa;    limitColors.put(new Integer(60), Color.yellow);&#xa;    limitColors.put(new Integer(80), Color.red);&#xa;    renderer.setLimits(limitColors);&#xa;    jTable7.getColumnModel().getColumn(7).setCellRenderer(renderer);&#xa;&#xa;jScrollPane8= new FrozenTablePane(jTable8, 3);"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jTable8.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);&#xa;jTable8.setFillsViewportHeight(true);&#xa;jTable8.setPreferredScrollableViewportSize(new Dimension(1000,70));"/>
+                          </AuxValues>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel11">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="AOU">
+                        <Property name="tabTitle" type="java.lang.String" value="AOU"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane9" alignment="0" pref="791" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane9" alignment="0" pref="371" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane9">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTable" name="jTable9">
+                          <Properties>
+                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                              <Table columnCount="13" rowCount="6">
+                                <Column editable="true" title="N&#xb0;" type="java.lang.Integer"/>
+                                <Column editable="true" title="N&#xb0; Carnet" type="java.lang.String">
+                                  <Data value="df"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                </Column>
+                                <Column editable="true" title="Noms &amp; Pr&#xe9;noms" type="java.lang.String">
+                                  <Data value="df"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                </Column>
+                                <Column editable="true" title="Report" type="java.lang.Double"/>
+                                <Column editable="true" title="Mise" type="java.lang.Integer"/>
+                                <Column editable="true" title="Retenue" type="java.lang.Integer"/>
+                                <Column editable="true" title="Cot. /31" type="java.lang.Double"/>
+                                <Column editable="true" title="Pourcentage" type="java.lang.Object">
+                                  <Data value="50.4534"/>
+                                  <Data value="20.58"/>
+                                  <Data value="10.2585"/>
+                                  <Data value="85.258"/>
+                                  <Data value="69.258"/>
+                                  <Data value="3258.25"/>
+                                </Column>
+                                <Column editable="true" title="Total" type="java.lang.Double"/>
+                                <Column editable="true" title="Retraits" type="java.lang.Double"/>
+                                <Column editable="true" title="Solde" type="java.lang.Double"/>
+                                <Column editable="true" title="IdEpargnant" type="java.lang.Integer"/>
+                                <Column editable="true" title="TypeEpargnant" type="java.lang.String"/>
+                              </Table>
+                            </Property>
+                            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                              <TableColumnModel selectionModel="0">
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                              </TableColumnModel>
+                            </Property>
+                            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                            </Property>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTable() {&#xa;    public boolean getScrollableTracksViewportWidth(){&#xa;        return getPreferredSize().width &lt; getParent().getWidth();&#xa;    }&#xa;}"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jTable9.getColumnModel().getColumn(0).setPreferredWidth(30);&#xa;jTable9.getColumnModel().getColumn(1).setPreferredWidth(90);&#xa;jTable9.getColumnModel().getColumn(2).setPreferredWidth(150);&#xa;jTable9.getColumnModel().getColumn(3).setPreferredWidth(100);&#xa;jTable9.getColumnModel().getColumn(4).setPreferredWidth(100);&#xa;jTable9.getColumnModel().getColumn(5).setPreferredWidth(90);&#xa;jTable9.getColumnModel().getColumn(6).setPreferredWidth(100);&#xa;jTable9.getColumnModel().getColumn(7).setPreferredWidth(90);&#xa;jTable9.getColumnModel().getColumn(8).setPreferredWidth(80);&#xa;jTable9.getColumnModel().getColumn(9).setPreferredWidth(80);&#xa;jTable9.getColumnModel().getColumn(10).setPreferredWidth(80);&#xa;&#xa;&#xa;&#xa;jTable9.getColumnModel().getColumn(11).setMaxWidth(0);&#xa;jTable9.getColumnModel().getColumn(12).setMaxWidth(0);&#xa;jTable9.getColumnModel().getColumn(11).setMinWidth(0);&#xa;jTable9.getColumnModel().getColumn(12).setMinWidth(0);&#xa;// Progress bar renderer &#xa;    renderer = new IndicatorCellRenderer(MIN, MAX);&#xa;    renderer.setStringPainted(true);&#xa;    renderer.setBackground(jTable9.getBackground());&#xa;&#xa;    // set limit value and fill color&#xa;    limitColors = new Hashtable();&#xa;    limitColors.put(new Integer(0), Color.green);&#xa;    limitColors.put(new Integer(60), Color.yellow);&#xa;    limitColors.put(new Integer(80), Color.red);&#xa;    renderer.setLimits(limitColors);&#xa;    jTable9.getColumnModel().getColumn(7).setCellRenderer(renderer);&#xa;&#xa;jScrollPane9= new FrozenTablePane(jTable9, 3);"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jTable9.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);&#xa;jTable9.setFillsViewportHeight(true);&#xa;jTable9.setPreferredScrollableViewportSize(new Dimension(1000,70));"/>
+                          </AuxValues>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel12">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="SEPT">
+                        <Property name="tabTitle" type="java.lang.String" value="SEPT"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane10" alignment="0" pref="791" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane10" alignment="0" pref="371" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane10">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTable" name="jTable10">
+                          <Properties>
+                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                              <Table columnCount="13" rowCount="6">
+                                <Column editable="true" title="N&#xb0;" type="java.lang.Integer"/>
+                                <Column editable="true" title="N&#xb0; Carnet" type="java.lang.String">
+                                  <Data value="df"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                </Column>
+                                <Column editable="true" title="Noms &amp; Pr&#xe9;noms" type="java.lang.String">
+                                  <Data value="df"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                </Column>
+                                <Column editable="true" title="Report" type="java.lang.Double"/>
+                                <Column editable="true" title="Mise" type="java.lang.Integer"/>
+                                <Column editable="true" title="Retenue" type="java.lang.Integer"/>
+                                <Column editable="true" title="Cot. /31" type="java.lang.Double"/>
+                                <Column editable="true" title="Pourcentage" type="java.lang.Object">
+                                  <Data value="50.4534"/>
+                                  <Data value="20.58"/>
+                                  <Data value="10.2585"/>
+                                  <Data value="85.258"/>
+                                  <Data value="69.258"/>
+                                  <Data value="3258.25"/>
+                                </Column>
+                                <Column editable="true" title="Total" type="java.lang.Double"/>
+                                <Column editable="true" title="Retraits" type="java.lang.Double"/>
+                                <Column editable="true" title="Solde" type="java.lang.Double"/>
+                                <Column editable="true" title="IdEpargnant" type="java.lang.Integer"/>
+                                <Column editable="true" title="TypeEpargnant" type="java.lang.String"/>
+                              </Table>
+                            </Property>
+                            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                              <TableColumnModel selectionModel="0">
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                              </TableColumnModel>
+                            </Property>
+                            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                            </Property>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTable() {&#xa;    public boolean getScrollableTracksViewportWidth(){&#xa;        return getPreferredSize().width &lt; getParent().getWidth();&#xa;    }&#xa;}"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jTable10.getColumnModel().getColumn(0).setPreferredWidth(30);&#xa;jTable10.getColumnModel().getColumn(1).setPreferredWidth(90);&#xa;jTable10.getColumnModel().getColumn(2).setPreferredWidth(150);&#xa;jTable10.getColumnModel().getColumn(3).setPreferredWidth(100);&#xa;jTable10.getColumnModel().getColumn(4).setPreferredWidth(100);&#xa;jTable10.getColumnModel().getColumn(5).setPreferredWidth(90);&#xa;jTable10.getColumnModel().getColumn(6).setPreferredWidth(100);&#xa;jTable10.getColumnModel().getColumn(7).setPreferredWidth(90);&#xa;jTable10.getColumnModel().getColumn(8).setPreferredWidth(80);&#xa;jTable10.getColumnModel().getColumn(9).setPreferredWidth(80);&#xa;jTable10.getColumnModel().getColumn(10).setPreferredWidth(80);&#xa;&#xa;&#xa;jTable10.getColumnModel().getColumn(11).setMaxWidth(0);&#xa;jTable10.getColumnModel().getColumn(12).setMaxWidth(0);&#xa;jTable10.getColumnModel().getColumn(11).setMinWidth(0);&#xa;jTable10.getColumnModel().getColumn(12).setMinWidth(0);&#xa;&#xa;// Progress bar renderer &#xa;    renderer = new IndicatorCellRenderer(MIN, MAX);&#xa;    renderer.setStringPainted(true);&#xa;    renderer.setBackground(jTable10.getBackground());&#xa;&#xa;    // set limit value and fill color&#xa;    limitColors = new Hashtable();&#xa;    limitColors.put(new Integer(0), Color.green);&#xa;    limitColors.put(new Integer(60), Color.yellow);&#xa;    limitColors.put(new Integer(80), Color.red);&#xa;    renderer.setLimits(limitColors);&#xa;    jTable10.getColumnModel().getColumn(7).setCellRenderer(renderer);&#xa;&#xa;jScrollPane10= new FrozenTablePane(jTable10, 3);"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jTable10.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);&#xa;jTable10.setFillsViewportHeight(true);&#xa;jTable10.setPreferredScrollableViewportSize(new Dimension(1000,70));"/>
+                          </AuxValues>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel13">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="OCT">
+                        <Property name="tabTitle" type="java.lang.String" value="OCT"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane11" alignment="0" pref="791" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane11" alignment="0" pref="371" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane11">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTable" name="jTable11">
+                          <Properties>
+                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                              <Table columnCount="13" rowCount="6">
+                                <Column editable="true" title="N&#xb0;" type="java.lang.Integer"/>
+                                <Column editable="true" title="N&#xb0; Carnet" type="java.lang.String">
+                                  <Data value="df"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                </Column>
+                                <Column editable="true" title="Noms &amp; Pr&#xe9;noms" type="java.lang.String">
+                                  <Data value="df"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                </Column>
+                                <Column editable="true" title="Report" type="java.lang.Double"/>
+                                <Column editable="true" title="Mise" type="java.lang.Integer"/>
+                                <Column editable="true" title="Retenue" type="java.lang.Integer"/>
+                                <Column editable="true" title="Cot. /31" type="java.lang.Double"/>
+                                <Column editable="true" title="Pourcentage" type="java.lang.Object">
+                                  <Data value="50.4534"/>
+                                  <Data value="20.58"/>
+                                  <Data value="10.2585"/>
+                                  <Data value="85.258"/>
+                                  <Data value="69.258"/>
+                                  <Data value="3258.25"/>
+                                </Column>
+                                <Column editable="true" title="Total" type="java.lang.Double"/>
+                                <Column editable="true" title="Retraits" type="java.lang.Double"/>
+                                <Column editable="true" title="Solde" type="java.lang.Double"/>
+                                <Column editable="true" title="IdEpargnant" type="java.lang.Integer"/>
+                                <Column editable="true" title="TypeEpargnant" type="java.lang.String"/>
+                              </Table>
+                            </Property>
+                            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                              <TableColumnModel selectionModel="0">
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                              </TableColumnModel>
+                            </Property>
+                            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                            </Property>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTable() {&#xa;    public boolean getScrollableTracksViewportWidth(){&#xa;        return getPreferredSize().width &lt; getParent().getWidth();&#xa;    }&#xa;}"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jTable11.getColumnModel().getColumn(0).setPreferredWidth(30);&#xa;jTable11.getColumnModel().getColumn(1).setPreferredWidth(90);&#xa;jTable11.getColumnModel().getColumn(2).setPreferredWidth(150);&#xa;jTable11.getColumnModel().getColumn(3).setPreferredWidth(100);&#xa;jTable11.getColumnModel().getColumn(4).setPreferredWidth(100);&#xa;jTable11.getColumnModel().getColumn(5).setPreferredWidth(90);&#xa;jTable11.getColumnModel().getColumn(6).setPreferredWidth(100);&#xa;jTable11.getColumnModel().getColumn(7).setPreferredWidth(90);&#xa;jTable11.getColumnModel().getColumn(8).setPreferredWidth(80);&#xa;jTable11.getColumnModel().getColumn(9).setPreferredWidth(80);&#xa;jTable11.getColumnModel().getColumn(10).setPreferredWidth(80);&#xa;&#xa;&#xa;&#xa;jTable11.getColumnModel().getColumn(11).setMaxWidth(0);&#xa;jTable11.getColumnModel().getColumn(12).setMaxWidth(0);&#xa;jTable11.getColumnModel().getColumn(11).setMinWidth(0);&#xa;jTable11.getColumnModel().getColumn(12).setMinWidth(0);&#xa;&#xa;// Progress bar renderer &#xa;    renderer = new IndicatorCellRenderer(MIN, MAX);&#xa;    renderer.setStringPainted(true);&#xa;    renderer.setBackground(jTable11.getBackground());&#xa;&#xa;    // set limit value and fill color&#xa;    limitColors = new Hashtable();&#xa;    limitColors.put(new Integer(0), Color.green);&#xa;    limitColors.put(new Integer(60), Color.yellow);&#xa;    limitColors.put(new Integer(80), Color.red);&#xa;    renderer.setLimits(limitColors);&#xa;    jTable11.getColumnModel().getColumn(7).setCellRenderer(renderer);&#xa;&#xa;jScrollPane11= new FrozenTablePane(jTable11, 3);"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jTable11.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);&#xa;jTable11.setFillsViewportHeight(true);&#xa;jTable11.setPreferredScrollableViewportSize(new Dimension(1000,70));"/>
+                          </AuxValues>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel14">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="NOV">
+                        <Property name="tabTitle" type="java.lang.String" value="NOV"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane12" alignment="0" pref="791" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane12" alignment="0" pref="371" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane12">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTable" name="jTable12">
+                          <Properties>
+                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                              <Table columnCount="13" rowCount="6">
+                                <Column editable="true" title="N&#xb0;" type="java.lang.Integer"/>
+                                <Column editable="true" title="N&#xb0; Carnet" type="java.lang.String">
+                                  <Data value="df"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                </Column>
+                                <Column editable="true" title="Noms &amp; Pr&#xe9;noms" type="java.lang.String">
+                                  <Data value="df"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                </Column>
+                                <Column editable="true" title="Report" type="java.lang.Double"/>
+                                <Column editable="true" title="Mise" type="java.lang.Integer"/>
+                                <Column editable="true" title="Retenue" type="java.lang.Integer"/>
+                                <Column editable="true" title="Cot. /31" type="java.lang.Double"/>
+                                <Column editable="true" title="Pourcentage" type="java.lang.Object">
+                                  <Data value="50.4534"/>
+                                  <Data value="20.58"/>
+                                  <Data value="10.2585"/>
+                                  <Data value="85.258"/>
+                                  <Data value="69.258"/>
+                                  <Data value="3258.25"/>
+                                </Column>
+                                <Column editable="true" title="Total" type="java.lang.Double"/>
+                                <Column editable="true" title="Retraits" type="java.lang.Double"/>
+                                <Column editable="true" title="Solde" type="java.lang.Double"/>
+                                <Column editable="true" title="IdEpargnant" type="java.lang.Integer"/>
+                                <Column editable="true" title="TypeEpargnant" type="java.lang.String"/>
+                              </Table>
+                            </Property>
+                            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                              <TableColumnModel selectionModel="0">
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                              </TableColumnModel>
+                            </Property>
+                            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                            </Property>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTable() {&#xa;    public boolean getScrollableTracksViewportWidth(){&#xa;        return getPreferredSize().width &lt; getParent().getWidth();&#xa;    }&#xa;}"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jTable12.getColumnModel().getColumn(0).setPreferredWidth(30);&#xa;jTable12.getColumnModel().getColumn(1).setPreferredWidth(90);&#xa;jTable12.getColumnModel().getColumn(2).setPreferredWidth(150);&#xa;jTable12.getColumnModel().getColumn(3).setPreferredWidth(100);&#xa;jTable12.getColumnModel().getColumn(4).setPreferredWidth(100);&#xa;jTable12.getColumnModel().getColumn(5).setPreferredWidth(90);&#xa;jTable12.getColumnModel().getColumn(6).setPreferredWidth(100);&#xa;jTable12.getColumnModel().getColumn(7).setPreferredWidth(90);&#xa;jTable12.getColumnModel().getColumn(8).setPreferredWidth(80);&#xa;jTable12.getColumnModel().getColumn(9).setPreferredWidth(80);&#xa;jTable12.getColumnModel().getColumn(10).setPreferredWidth(80);&#xa;&#xa;&#xa;&#xa;jTable12.getColumnModel().getColumn(11).setMaxWidth(0);&#xa;jTable12.getColumnModel().getColumn(12).setMaxWidth(0);&#xa;jTable12.getColumnModel().getColumn(11).setMinWidth(0);&#xa;jTable12.getColumnModel().getColumn(12).setMinWidth(0);&#xa;// Progress bar renderer &#xa;    renderer = new IndicatorCellRenderer(MIN, MAX);&#xa;    renderer.setStringPainted(true);&#xa;    renderer.setBackground(jTable12.getBackground());&#xa;&#xa;// set limit value and fill color&#xa;    limitColors = new Hashtable();&#xa;    limitColors.put(new Integer(0), Color.green);&#xa;    limitColors.put(new Integer(60), Color.yellow);&#xa;    limitColors.put(new Integer(80), Color.red);&#xa;    renderer.setLimits(limitColors);&#xa;    jTable12.getColumnModel().getColumn(7).setCellRenderer(renderer);&#xa;    jScrollPane12= new FrozenTablePane(jTable12, 3);"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jTable12.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);&#xa;jTable12.setFillsViewportHeight(true);&#xa;jTable12.setPreferredScrollableViewportSize(new Dimension(1000,70));"/>
+                          </AuxValues>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel15">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="DEC">
+                        <Property name="tabTitle" type="java.lang.String" value="DEC"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane13" alignment="0" pref="791" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane13" alignment="0" pref="371" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane13">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTable" name="jTable13">
+                          <Properties>
+                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                              <Table columnCount="13" rowCount="6">
+                                <Column editable="true" title="N&#xb0;" type="java.lang.Integer"/>
+                                <Column editable="true" title="N&#xb0; Carnet" type="java.lang.String">
+                                  <Data value="df"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                </Column>
+                                <Column editable="true" title="Noms &amp; Pr&#xe9;noms" type="java.lang.String">
+                                  <Data value="df"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                  <Data value="null"/>
+                                </Column>
+                                <Column editable="true" title="Report" type="java.lang.Double"/>
+                                <Column editable="true" title="Mise" type="java.lang.Integer"/>
+                                <Column editable="true" title="Retenue" type="java.lang.Integer"/>
+                                <Column editable="true" title="Cot. /31" type="java.lang.Double"/>
+                                <Column editable="true" title="Pourcentage" type="java.lang.Object">
+                                  <Data value="50.4534"/>
+                                  <Data value="20.58"/>
+                                  <Data value="10.2585"/>
+                                  <Data value="85.258"/>
+                                  <Data value="69.258"/>
+                                  <Data value="3258.25"/>
+                                </Column>
+                                <Column editable="true" title="Total" type="java.lang.Double"/>
+                                <Column editable="true" title="Retraits" type="java.lang.Double"/>
+                                <Column editable="true" title="Solde" type="java.lang.Double"/>
+                                <Column editable="true" title="IdEpargnant" type="java.lang.Integer"/>
+                                <Column editable="true" title="TypeEpargnant" type="java.lang.String"/>
+                              </Table>
+                            </Property>
+                            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                              <TableColumnModel selectionModel="0">
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                              </TableColumnModel>
+                            </Property>
+                            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                            </Property>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTable() {&#xa;    public boolean getScrollableTracksViewportWidth(){&#xa;        return getPreferredSize().width &lt; getParent().getWidth();&#xa;    }&#xa;}"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jTable13.getColumnModel().getColumn(0).setPreferredWidth(30);&#xa;jTable13.getColumnModel().getColumn(1).setPreferredWidth(90);&#xa;jTable13.getColumnModel().getColumn(2).setPreferredWidth(150);&#xa;jTable13.getColumnModel().getColumn(3).setPreferredWidth(100);&#xa;jTable13.getColumnModel().getColumn(4).setPreferredWidth(100);&#xa;jTable13.getColumnModel().getColumn(5).setPreferredWidth(90);&#xa;jTable13.getColumnModel().getColumn(6).setPreferredWidth(100);&#xa;jTable13.getColumnModel().getColumn(7).setPreferredWidth(90);&#xa;jTable13.getColumnModel().getColumn(8).setPreferredWidth(80);&#xa;jTable13.getColumnModel().getColumn(9).setPreferredWidth(80);&#xa;jTable13.getColumnModel().getColumn(10).setPreferredWidth(80);&#xa;&#xa;&#xa;&#xa;//jTable13.getColumnModel().getColumn(0).setPreferredWidth(30);&#xa;//jTable13.getColumnModel().getColumn(1).setPreferredWidth(90);&#xa;//jTable13.getColumnModel().getColumn(2).setPreferredWidth(250);&#xa;//jTable13.getColumnModel().getColumn(3).setPreferredWidth(130);&#xa;//jTable13.getColumnModel().getColumn(4).setPreferredWidth(130);&#xa;//jTable13.getColumnModel().getColumn(5).setPreferredWidth(90);&#xa;//jTable13.getColumnModel().getColumn(6).setPreferredWidth(120);&#xa;//jTable13.getColumnModel().getColumn(7).setPreferredWidth(130);&#xa;//jTable13.getColumnModel().getColumn(8).setPreferredWidth(130);&#xa;//jTable13.getColumnModel().getColumn(9).setPreferredWidth(130);&#xa;//jTable13.getColumnModel().getColumn(10).setPreferredWidth(130);&#xa;&#xa;&#xa;jTable13.getColumnModel().getColumn(11).setMaxWidth(0);&#xa;jTable13.getColumnModel().getColumn(12).setMaxWidth(0);&#xa;jTable13.getColumnModel().getColumn(11).setMinWidth(0);&#xa;jTable13.getColumnModel().getColumn(12).setMinWidth(0);&#xa;// Progress bar renderer &#xa;renderer = new IndicatorCellRenderer(MIN, MAX);&#xa;renderer.setStringPainted(true);&#xa;renderer.setBackground(jTable13.getBackground());&#xa;&#xa;    // set limit value and fill color&#xa;    limitColors = new Hashtable();&#xa;    limitColors.put(new Integer(0), Color.green);&#xa;    limitColors.put(new Integer(60), Color.yellow);&#xa;    limitColors.put(new Integer(80), Color.red);&#xa;    renderer.setLimits(limitColors);&#xa;    jTable13.getColumnModel().getColumn(7).setCellRenderer(renderer);&#xa;&#xa;jScrollPane13= new FrozenTablePane(jTable13, 3);&#xa;jComboBox2.setSelectedIndex(jComboBox2.getItemCount()-1);&#xa;SimpleDateFormat fm = new SimpleDateFormat(&quot;MM&quot;);&#xa;SimpleDateFormat fm2 = new SimpleDateFormat(&quot;yyyy&quot;);&#xa; try {&#xa;              fillmonthsummtable(Integer.valueOf(fm2.format(today)).intValue(), Integer.valueOf(fm.format(today)).intValue());&#xa;            } catch (SQLException ex) {&#xa;                Logger.getLogger(TontineSynthese.class.getName()).log(Level.SEVERE, null, ex);&#xa;            } catch (ParseException ex) {&#xa;                Logger.getLogger(TontineSynthese.class.getName()).log(Level.SEVERE, null, ex);&#xa;            } catch (Exception ex) {&#xa;                Logger.getLogger(TontineSynthese.class.getName()).log(Level.SEVERE, null, ex);&#xa;            }"/>
+                            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jTable13.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);&#xa;jTable13.setFillsViewportHeight(true);&#xa;jTable13.setPreferredScrollableViewportSize(new Dimension(1000,70));"/>
+                          </AuxValues>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="jLabel3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ann&#xe9;e :"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="jComboBox2">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="4">
+                    <StringItem index="0" value="Item 1"/>
+                    <StringItem index="1" value="Item 2"/>
+                    <StringItem index="2" value="Item 3"/>
+                    <StringItem index="3" value="Item 4"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="jComboBox2ItemStateChanged"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="conn = Connect.ConnectDb();&#xa;try {&#xa;    pre = conn.prepareStatement(&quot;SELECT MIN(YEAR(DateTontine)) as minyear, MAX(YEAR(DateTontine)) as maxyear FROM Tontine&quot;);&#xa;    rs = pre.executeQuery();&#xa;    while (rs.next()) {&#xa;        minyear=rs.getInt(1);&#xa;        maxyear=Calendar.getInstance().get(Calendar.YEAR);  // m&#xe9;thode &#xe0; revoir&#xa;        if(maxyear &lt; rs.getInt(2)) maxyear=rs.getInt(2);&#xa;    }&#xa;    } catch (SQLException ex) {&#xa;        Logger.getLogger(TontineSynthese.class.getName()).log(Level.SEVERE, null, ex);&#xa;    }   finally {&#xa;&#xa;        try {&#xa;            if (rs !=null)&#xa;            rs.close();&#xa;&#xa;            if (pre !=null)&#xa;            pre.close();&#xa;&#xa;            if (conn !=null)&#xa;            conn.close();&#xa;        } catch (SQLException ex) {&#xa;            Logger.getLogger(TontineSynthese.class.getName()).log(Level.SEVERE, null, ex);&#xa;        }&#xa;    }&#xa;    // Connect.close(conn, rs, pre);&#xa;&#xa;    //Determine boundaries&#xa;    conn = Connect.ConnectDb();&#xa;    try {&#xa;        pre = conn.prepareStatement(&quot;SELECT MIN(DateTontine) FROM Tontine&quot;);&#xa;        rs = pre.executeQuery();&#xa;        while (rs.next()) {&#xa;            SimpleDateFormat simplefm = new SimpleDateFormat(&quot;MM&quot;);&#xa;            Date minDate=(rs.getDate(1));&#xa;            originmonth= Integer.valueOf(simplefm.format(minDate)).intValue();&#xa;&#xa;        }&#xa;    } catch (SQLException ex) {&#xa;        Logger.getLogger(TontineSynthese.class.getName()).log(Level.SEVERE, null, ex);&#xa;    }   finally {&#xa;&#xa;        try {&#xa;            if (rs !=null)&#xa;            rs.close();&#xa;&#xa;            if (pre !=null)&#xa;            pre.close();&#xa;&#xa;            if (conn !=null)&#xa;            conn.close();&#xa;        } catch (SQLException ex) {&#xa;            Logger.getLogger(TontineSynthese.class.getName()).log(Level.SEVERE, null, ex);&#xa;        }&#xa;    }"/>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="JPanel jPanel5 = new JPanel(); &#xa;jComboBox2.removeAllItems();&#xa;for (int i=minyear; i&lt;=maxyear; i++) {&#xa;jComboBox2.addItem(&quot;Exercice &quot;+i);&#xa;}&#xa;}&#xa;//jTabbedPane2.add(&quot;tab 3&quot;, jPanel4);&#xa;//jTabbedPane2.add(&quot;tab 4&quot;, jPanel4);&#xa;//jTabbedPane2.add(&quot;tab 5&quot;, jPanel4);&#xa;jComboBox2.setSelectedIndex(jComboBox2.getItemCount()-1);"/>
+                <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="System.out.println(&quot;minyear&quot;+minyear);&#xa;if (minyear !=0 &amp;&amp; maxyear !=0) {"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel3">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="for (int i= Integer.valueOf(fm.format(today)).intValue(); i&lt;12; i++) {&#xa;            jTabbedPane2.setEnabledAt(i, false);&#xa;}&#xa;&#xa;&#xa;&#xa;jTabbedPane2.setSelectedIndex(Integer.valueOf(fm.format(today)).intValue()-1);"/>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new ChartPanel(getChart())"/>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="//if (jComboBox1.getSelectedIndex() != -1) setChart((ChartPanel) jPanel3);&#xa;jComboBox1.setSelectedIndex(jComboBox1.getItemCount()-1);&#xa;//jScrollPane2= new FrozenTablePane(jTable2, 1);&#xa;//jScrollPane2.setViewportView(jTable2);"/>
+          </AuxValues>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Progression annuelle">
+                <Property name="tabTitle" type="java.lang.String" value="Progression annuelle"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="823" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="477" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+        </Container>
+        <Container class="java.awt.Panel" name="panel1">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Historique des mouvements">
+                <Property name="tabTitle" type="java.lang.String" value="Historique des mouvements"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane14" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="demoDateField2" pref="174" max="32767" attributes="0"/>
+                                  <Component id="demoDateField1" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
+                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="322" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="demoDateField1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="demoDateField2" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jScrollPane14" pref="311" max="32767" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane14">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTable" name="jTable14">
+                  <Properties>
+                    <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {&#xa;        {null, null, null, null, null, null},&#xa;        {null, null, null, null, null, null},&#xa;        {null, null, null, null, null, null},&#xa;        {null, null, null, null, null, null}&#xa;    },&#xa;    new String [] {&#xa;        &quot;ID&quot;, &quot;Date&quot;, &quot;Noms &amp; Pr&#xe9;noms/Rais. Soc&quot;, &quot;Mise&quot;, &quot;Nbre de cot.&quot;, &quot;Montant&quot;, &quot;Libell&#xe9;&quot;&#xa;    }&#xa;) {&#xa;    Class[] types = new Class [] {&#xa;        java.lang.Integer.class, java.util.Date.class, java.lang.String.class, java.lang.Double.class, java.lang.Integer.class, java.lang.Double.class, String.class&#xa;    };&#xa;    boolean[] canEdit = new boolean [] {&#xa;        false, false, false, false, false, false, false&#xa;    };&#xa;&#xa;    public Class getColumnClass(int columnIndex) {&#xa;        return types [columnIndex];&#xa;    }&#xa;&#xa;    public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;        return canEdit [columnIndex];&#xa;    }&#xa;}" type="code"/>
+                    </Property>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="jLabel4">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Date d&#xe9;but"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel5">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Date fin"/>
+              </Properties>
+            </Component>
+            <Component class="com.jp.samples.comp.calendarnew.DemoDateField" name="demoDateField1">
+              <Properties>
+                <Property name="yearDigitsAmount" type="int" value="4"/>
+              </Properties>
+            </Component>
+            <Component class="com.jp.samples.comp.calendarnew.DemoDateField" name="demoDateField2">
+              <Properties>
+                <Property name="yearDigitsAmount" type="int" value="4"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Valider"/>
+              </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="JButton1"/>
+                <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
+              </AccessibilityProperties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel6">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Total:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel7">
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

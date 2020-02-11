@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace pref="503" max="32767" attributes="0"/>
+              <Component id="jToggleButton1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="474" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="1014" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace pref="29" max="32767" attributes="0"/>
+              <Component id="jLabel1" min="-2" pref="31" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="356" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jToggleButton1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="jTable1">
+          <Properties>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    to2DimArray(data),&#xa;    new String [] {&#xa;        &quot;Num&quot;, &quot;Numero dossier&quot;, &quot;Nom &amp; Prenoms &quot;, &quot;Montant d&#xfb;&quot;, &quot;Echeance&quot;, &quot;Contact &quot;, &quot;Responable dossier&quot;, &quot;Type dossier&quot;&#xa;    }&#xa;) {&#xa;    Class[] types = new Class [] {&#xa;        java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.Double.class, java.lang.Object.class, java.lang.String.class, java.lang.String.class, java.lang.String.class&#xa;    };&#xa;&#xa;    public Class getColumnClass(int columnIndex) {&#xa;        return types [columnIndex];&#xa;    }&#xa;&#xa;}" type="code"/>
+            </Property>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+              <TableColumnModel selectionModel="0"/>
+            </Property>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="false" resizingAllowed="true"/>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTable() {&#xa;    @Override&#xa;    public Component prepareRenderer(TableCellRenderer renderer, int row,&#xa;        int col) {&#xa;        Component comp = super.prepareRenderer(renderer, row, col);&#xa;        if (col == 3 || col ==5){&#xa;            ((JLabel) comp).setHorizontalAlignment(JLabel.CENTER);&#xa;        } else {&#xa;&#xa;            ((JLabel) comp).setHorizontalAlignment(JLabel.RIGHT);&#xa;&#xa;        }&#xa;&#xa;        Date rowdate = (Date) jTable1.getValueAt(row, 4);&#xa;&#xa;        Calendar now = Calendar.getInstance();&#xa;        Calendar cal = Calendar.getInstance();&#xa;        cal.setTime(rowdate);&#xa;        primarycolorbackground = jTable1.getBackground();&#xa;        primarycolorforeground = jTable1.getForeground();&#xa;        int year = cal.get(Calendar.YEAR);&#xa;        int month = cal.get(Calendar.MONTH);&#xa;        if (month == now.get(Calendar.MONTH) &amp;&amp; year == now.get(Calendar.YEAR)) {&#xa;            comp.setBackground(Color.LIGHT_GRAY);&#xa;        } else  {&#xa;            comp.setBackground(primarycolorbackground);&#xa;            comp.setForeground(primarycolorforeground);&#xa;        }&#xa;&#xa;        return comp;&#xa;&#xa;    }&#xa;}"/>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jTable1.getColumnModel().getColumn(0).setMaxWidth(35);&#xa;jTable1.getColumnModel().getColumn(1).setPreferredWidth(140);&#xa;jTable1.getColumnModel().getColumn(2).setPreferredWidth(230);&#xa;jTable1.getColumnModel().getColumn(3).setPreferredWidth(140);&#xa;jTable1.getColumnModel().getColumn(4).setPreferredWidth(80);&#xa;jTable1.getColumnModel().getColumn(5).setPreferredWidth(80);&#xa;jTable1.getColumnModel().getColumn(6).setPreferredWidth(130);&#xa;//jTable1.getColumnModel().getColumn(7).setPreferredWidth(130);&#xa;//jTable1.getColumnModel().getColumn(11).setWidth(0);&#xa;//jTable1.getColumnModel().getColumn(11).setMinWidth(0);&#xa;//jTable1.getColumnModel().getColumn(11).setMaxWidth(0);&#xa;jTable1.getColumnModel().getColumn(4).setCellRenderer(new DateRenderer());&#xa;DefaultTableCellRenderer dtcr = new DefaultTableCellRenderer();&#xa;dtcr.setHorizontalTextPosition(DefaultTableCellRenderer.CENTER);&#xa;jTable1.getColumnModel().getColumn(3).setCellRenderer(dtcr);&#xa;jTable1.getColumnModel().getColumn(5).setCellRenderer(dtcr);"/>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="try {&#xa;            // TODO add your handling code here:&#xa;            data=populateEcheanceTable();&#xa;        } catch (Exception ex) {&#xa;            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);&#xa;}"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JToggleButton" name="jToggleButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Regulariser"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jToggleButton1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="30" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Ech&#xe9;ances/ Sommes &#xe0; rembourser"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

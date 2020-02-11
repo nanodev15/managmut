@@ -1,0 +1,620 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package nehemie_mutuelle;
+
+import java.awt.Color;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.text.DateFormat;
+import java.text.NumberFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Collections;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Locale;
+import java.util.Vector;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JTable;
+import javax.swing.border.Border;
+import javax.swing.border.CompoundBorder;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.LineBorder;
+import javax.swing.event.TableModelEvent;
+import javax.swing.event.TableModelListener;
+import static nehemie_mutuelle.EpargneContext.conn;
+
+/**
+ *
+ * @author elommarcarnold
+ */
+public class TontineUser extends javax.swing.JFrame {
+    
+    
+    
+    String nomEpargnant;
+    String prenomEpargnant;
+    String typeEpargnant;
+    int IdEpargnant;
+    static Connection conn = null;
+    private Vector<Vector> data;
+    Date date_adhesion;
+    Connection connect = null;
+    PreparedStatement pre= null;
+    PreparedStatement pre21= null;
+    PreparedStatement pre2= null;
+    PreparedStatement pre3= null;
+    /** Creates new form TontineUser */
+    public TontineUser() {
+        initComponents();
+    }
+    
+   public TontineUser(String nomEpargnant, String prenomEpargnant, String typeEpargnant) {
+       this.nomEpargnant = nomEpargnant;
+        this.prenomEpargnant = prenomEpargnant;
+        this.typeEpargnant = typeEpargnant;
+        this.IdEpargnant = getId(this.nomEpargnant, this.prenomEpargnant, this.typeEpargnant);
+        setTitle("Historique des cotisations tontine de " + this.nomEpargnant + " " + this.prenomEpargnant);
+        initComponents();
+   }
+   
+     public static Object[][] to2DimArray(Vector v) {
+        Object[][] out = new Object[v.size()][0];
+        for (int i = 0; i < out.length; i++) {
+            out[i] = ((Vector) v.get(i)).toArray();
+        }
+        return out;
+    }
+
+   
+    public Vector getTontine() throws Exception {
+    
+    conn = Connect.ConnectDb(); 
+    String date1 = "01/01/2014";
+    final String OLD_FORMAT = "dd/MM/yyyy";
+    final String NEW_FORMAT = "MMM, YY";
+    SimpleDateFormat newFormat = new SimpleDateFormat(OLD_FORMAT);
+    DateFormat formatter = new SimpleDateFormat(NEW_FORMAT);
+    Date fromDate = newFormat.parse(date1);
+    Date toDate = new Date(); //newFormat.parse(date2);
+
+    Calendar beginCalendar = Calendar.getInstance();
+    Calendar finishCalendar = Calendar.getInstance();
+
+    beginCalendar.setTimeInMillis(fromDate.getTime());
+    beginCalendar.set (Calendar.DAY_OF_MONTH,1); 
+    finishCalendar.setTimeInMillis(toDate.getTime());
+    Vector<Vector> TontineVector = new Vector<Vector>();
+    
+    Date date;
+
+   // String date;
+    while (beginCalendar.before(finishCalendar)) {
+        // add one month to date per loop
+        //date = newFormat.format(beginCalendar.getTime());
+        date = beginCalendar.getTime(); 
+        java.sql.Date sqldate= new java.sql.Date(date.getTime());
+        
+        // Find all debit 
+        pre3=conn.prepareStatement("SELECT SUM(Montant) FROM retraits_tontine WHERE IdEpargnant='" + this.IdEpargnant + "' AND TypeEpargnant='" + this.typeEpargnant + "' AND MONTH(DateRet)=MONTH("+sqldate+") AND YEAR(DateRet)=YEAR("+sqldate+");");
+        ResultSet rs3 = pre3.executeQuery();
+        pre21= conn.prepareStatement("SET @SumMontant := 0;");
+        pre21.executeQuery();
+        pre2= conn.prepareStatement("SELECT idretraits_tontine, DateRet, Montant, (@SumMontant := @SumMontant + Montant) AS CumulativeSum FROM retraits_tontine WHERE IdEpargnant='" + this.IdEpargnant + "' AND TypeEpargnant='" + this.typeEpargnant + "' AND MONTH(DateRet)=MONTH("+sqldate+") AND YEAR(DateRet)=YEAR("+sqldate+");");
+        //System.out.println("SET @SumMontant := 0; SELECT idretraits_tontine, Date, Montant, (@SumMontant := @SumMontant + Montant) AS CumulativeSum FROM retraits_tontine WHERE IdEpargnant='"+this.IdEpargnant +"' AND TypeEpargnant='" + this.typeEpargnant + "' AND MONTH(Date)=MONTH("+sqldate+") AND YEAR(Date)=YEAR("+sqldate+");");
+        ResultSet rs2 = pre2.executeQuery();
+        pre=conn.prepareStatement("SELECT idTontine, DateTontine, JoursTontine, Mise FROM Tontine WHERE IdEpargnant='" + this.IdEpargnant + "' AND TypeEpargnant='" + this.typeEpargnant+ "' AND DateTontine='"+sqldate+"';");
+        ResultSet rs = pre.executeQuery();
+        Vector<Object> tont = new Vector<Object>();
+        // Does not exist in the database
+        
+        if(!rs.next()) {
+            tont.add(date);
+            tont.add(null);
+            tont.add(null);
+            if (rs3.next()) {
+                tont.add(rs3.getDouble(1));
+            } else {
+                tont.add(0);
+            }
+            tont.add(null);
+            tont.add(new Boolean(true));
+            TontineVector.add(tont);
+            
+            while(rs2.next()) {
+                  Vector<Object> tontr = new Vector<Object>();
+                  tontr.add(rs2.getTimestamp(2));
+                  tontr.add(null);
+                  tontr.add(rs2.getDouble(3));
+                  tontr.add(rs2.getDouble(4));
+                  tontr.add(rs2.getInt(1));
+                  tontr.add(new Boolean(false));
+                  TontineVector.add(tontr);
+            }
+        } else {
+            
+            tont.add(date);
+            tont.add(rs.getDouble(4));
+            // retrieve values 
+            String values = rs.getString(3);
+            HashSet<String> valuesSet = new HashSet<>();
+            Collections.addAll(valuesSet , values.split(","));
+            tont.add(rs.getDouble(4)*valuesSet.size());
+            if (rs3.next()) {
+                tont.add(rs3.getDouble(1));
+            } else {
+                tont.add(0);
+            }
+            tont.add(rs.getInt(1));
+            tont.add(new Boolean(true));
+            TontineVector.add(tont);
+            
+             while(rs2.next()) {
+                  Vector<Object> tontr = new Vector<Object>();
+                  tontr.add(rs2.getTimestamp(2));
+                  tontr.add(null);
+                  tontr.add(rs2.getDouble(3));
+                  tontr.add(rs2.getDouble(4));
+                  tontr.add(rs2.getInt(1));
+                  tontr.add(new Boolean(false));
+                  TontineVector.add(tontr);
+            }
+            
+        }
+        
+      //  System.out.println(date);
+        beginCalendar.add(Calendar.MONTH, 1);
+    }
+
+//        pre = conn.prepareStatement("SELECT DateEpargne, MontantEpargne, MotifEpargne, idEpargne FROM Epargne WHERE IdEpargnant='" + this.IdEpargnant + "' AND MontantEpargne >=0" + " AND TypeEpargnant='" + this.typeEpargnant + "' ORDER BY DateEpargne");
+//        System.out.println("SELECT DateEpargne, MontantEpargne, MotifEpargne, IdEpargne FROM Epargne WHERE IdEpargnant='" + this.IdEpargnant + "' AND TypeEpargnant='" + this.typeEpargnant + "' ORDER BY DateEpargne");
+//        ResultSet rs = pre.executeQuery();
+//        SimpleDateFormat sdf= new SimpleDateFormat("dd/MM/YYYY hh:mm:ss");
+//        SimpleDateFormat sdf2= new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+//        // Vector<Vector<String>> membreVector = new Vector<Vector<String>>();
+//        Vector<Vector> membreVector = new Vector<Vector>();
+//        while (rs.next()) {
+//     //   Vector<String> membre = new Vector<String>();
+//            //   membre.add(String.valueOf(i)); 
+//            Vector<Object> membre = new Vector<Object>();
+//            Date date=sdf2.parse(rs.getString("DateEpargne"));
+//           // membre.add(sdf.format(date));
+//            membre.add(new java.sql.Timestamp(date.getTime()));
+//            membre.add(rs.getDouble("MontantEpargne"));
+//            // membre.add(new Double("5.5"));
+//            membre.add(rs.getString("MotifEpargne"));
+//            membre.add(rs.getString("idEpargne"));
+//
+//            //
+//            membreVector.add(membre);
+//        }
+//
+//        /*Close the connection after use (MUST)*/
+//        if (conn != null) {
+//            conn.close();
+//        }
+//        
+//        
+//        final EpargneContext copie= this; 
+//        System.out.println("Model"+ jTable1.getModel().toString()+ "finish");
+//jTable1.getModel().addTableModelListener(new TableModelListener() {
+//
+//    @Override
+//    public void tableChanged(TableModelEvent e) {
+//       NumberFormat n = NumberFormat.getCurrencyInstance(Locale.FRANCE); 
+//       double doublePayment =copie.getSum().doubleValue();
+//       String s = n.format(doublePayment);
+//       jLabel4.setText(s);
+//    }
+//});
+//
+//        return membreVector;
+//  
+    return null;
+}
+
+    
+    private int getId(String nomEpargnant, String prenomEpargnant, String typeEpargnant) {
+        connect = Connect.ConnectDb();
+        if (typeEpargnant.equalsIgnoreCase("adulte")) {
+            String sql01 = "SELECT idProfil_adulte FROM Profil_adulte WHERE Noms= '" + nomEpargnant + "' AND lower(Prenoms)= '" + prenomEpargnant.toLowerCase(Locale.FRENCH) + "'";
+            Statement stmt = null;
+            connect = Connect.ConnectDb();
+
+            ResultSet rs1 = null;
+            int result = 0;
+
+            try {
+                stmt = connect.createStatement();
+                rs1 = stmt.executeQuery(sql01);
+                //result= rs1.getInt(1);
+            } catch (SQLException ex) {
+                Logger.getLogger(Adhesion_enfant.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            try {
+                if (rs1.next()) {
+
+                    result = rs1.getInt(1);
+                }
+            } catch (SQLException ex) {
+                Logger.getLogger(NewEpargne.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            return result;
+        } else if (typeEpargnant.equalsIgnoreCase("enfant")) {
+            String sql01 = "SELECT idProfil_enfant FROM Profil_enfant WHERE Nom= '" + nomEpargnant + "' AND lower(Prenoms)= '" + prenomEpargnant.toLowerCase(Locale.FRENCH) + "'";
+            Statement stmt = null;
+
+            connect = Connect.ConnectDb();
+
+            ResultSet rs1 = null;
+            int result = 0;
+
+            try {
+                stmt = connect.createStatement();
+
+                rs1 = stmt.executeQuery(sql01);
+
+                //    System.out.println("valeur"+rs1.getInt("idProfil_enfant"));
+                //  result= rs1.getInt("idProfil_enfant");
+            } catch (SQLException ex) {
+                Logger.getLogger(Adhesion_enfant.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+            try {
+                if (rs1.next()) {
+
+                    result = rs1.getInt(1);
+                }
+            } catch (SQLException ex) {
+                Logger.getLogger(NewEpargne.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            return result;
+        } else if (typeEpargnant.equalsIgnoreCase("pers morale")) {
+            String sql01 = "SELECT idProfil_persmorale FROM Profil_persmorale WHERE Raison_sociale= '" + nomEpargnant + "'";
+            Statement stmt = null;
+            connect = Connect.ConnectDb();
+
+            ResultSet rs1 = null;
+            int result = 0;
+
+            try {
+                stmt = connect.createStatement();
+                rs1 = stmt.executeQuery(sql01);
+                //  result= rs1.getInt(1);
+            } catch (SQLException ex) {
+                Logger.getLogger(Adhesion_enfant.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+            try {
+                if (rs1.next()) {
+
+                    result = rs1.getInt(1);
+                }
+            } catch (SQLException ex) {
+                Logger.getLogger(NewEpargne.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+            return result;
+
+        }
+
+        return 0;
+    }
+
+    
+    
+    /** This method is called from within the constructor to
+     * initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is
+     * always regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jButton1 = new javax.swing.JButton();
+        jSeparator1 = new javax.swing.JSeparator();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox();
+        jComboBox2 = new javax.swing.JComboBox();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jCheckBox1 = new javax.swing.JCheckBox();
+        jButton2 = new javax.swing.JButton();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        try {
+            // TODO add your handling code here:
+            data=getTontine();
+        } catch (Exception ex) {
+            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        Object[][] out = to2DimArray(data);
+
+        //jTable1.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
+        jTable1.setFillsViewportHeight(true);
+        jTable1.setAutoCreateRowSorter(true);
+        //jTable1.setPreferredScrollableViewportSize(new Dimension(1000,70));
+        //jTable1.setModel(new javax.swing.table.DefaultTableModel(out,
+            // new Object [][] {
+                //    {"20/10/2011", "500000000", "Dépôt initial", "1"},
+                //    {null, null, null, null},
+                //  {null, null, null, null},
+                //      {null, null, null, null},
+                //     {null, null, null, null},
+                //   {null, null, null, null},
+                // {null, null, null, null},
+                //      {null, null, null, null},
+                //      {null, null, null, null},
+                //      {null, null, null, null},
+                //      {null, null, null, null},
+                //     {null, null, null, null},
+                //   {null, null, null, null},
+                //     {null, null, null, null},
+                //      {null, null, null, null},
+                //    {null, null, null, null},
+                //    {null, null, null, null},
+                //   {null, null, null, null},
+                //    {null, null, null, null},
+                //     {null, null, null, null}
+                // },
+            //  new String [] {
+                //     "Date ", "Montant(en Frcs CFA)", "Motif", "ID"
+                //   }
+            //    new String  // à partir
+            //      "Date ", "Débit", "Crédit", "Solde", "Libellé", "ID"
+            //  }
+
+        //){
+
+        //    Class[] types = {java.sql.Timestamp.class, Double.class, Double.class, Double.class, String.class,
+            //        String.class};
+        //    @Override
+        //  public Class getColumnClass(int columnIndex) {
+            //     return this.types[columnIndex];
+            //  }
+
+        //    public Class getColumnClass(int column)
+        //    {
+            //        for (int row = 0; row < getRowCount(); row++)
+            //       {
+                //            Object o = getValueAt(row, column);
+
+                //            if (o != null)
+                //            return o.getClass();
+                //        }
+
+            //        return Object.class;
+            //    }
+        //}
+    //);
+    jTable1.setModel(new javax.swing.table.DefaultTableModel(out,
+        //  new Object [][] {
+            //      {null, null, null, null, null, null},
+            //      {null, null, null, null, null, null},
+            //     {null, null, null, null, null, null},
+            //     {null, null, null, null, null, null}
+            // }
+        // ,
+        new String [] {
+            "Date", "Mise", "Total", "Total retraits", "Idtontine", "Type"
+        }
+    ){
+
+        Class[] types = {java.sql.Timestamp.class, Double.class, Double.class, Double.class, Integer.class,
+            Boolean.class};
+        @Override
+        //  public Class getColumnClass(int columnIndex) {
+            //     return this.types[columnIndex];
+            //  }
+
+        public Class getColumnClass(int column)
+        {
+            for (int row = 0; row < getRowCount(); row++)
+            {
+                Object o = getValueAt(row, column);
+
+                if (o != null)
+                return o.getClass();
+            }
+
+            return Object.class;
+        }
+    }
+    );
+    jTable1.getColumnModel().getColumn(4).setMinWidth(0);
+    jTable1.getColumnModel().getColumn(4).setMaxWidth(0);
+    jTable1.getColumnModel().getColumn(5).setMinWidth(0);
+    jTable1.getColumnModel().getColumn(5).setMaxWidth(0);
+    jScrollPane1.setViewportView(jTable1);
+
+    jButton1.setText("jButton1");
+
+    jLabel1.setText("Solde");
+
+    jLabel2.setText("jLabel2");
+
+    jLabel3.setText("jLabel2");
+
+    jLabel4.setText("Total retraits");
+
+    jLabel5.setText("jLabel2");
+
+    jLabel6.setText("Cumul");
+
+    jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+    jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+    jLabel7.setText("Mois");
+
+    jLabel8.setText("Année");
+
+    jCheckBox1.setText("Afficher les retraits");
+
+    jButton2.setText("Nouveau retrait");
+    jButton2.setForeground(Color.BLACK);
+    jButton2.setBackground(Color.WHITE);
+    Border line = new LineBorder(Color.BLACK);
+    Border margin = new EmptyBorder(5, 15, 5, 15);
+    Border compound = new CompoundBorder(line, margin);
+    jButton2.setBorder(compound);
+
+    org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(getContentPane());
+    getContentPane().setLayout(layout);
+    layout.setHorizontalGroup(
+        layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+        .add(jSeparator1)
+        .add(layout.createSequentialGroup()
+            .add(23, 23, 23)
+            .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
+                .add(layout.createSequentialGroup()
+                    .add(jLabel6)
+                    .add(97, 97, 97)
+                    .add(jLabel5))
+                .add(layout.createSequentialGroup()
+                    .add(jLabel1)
+                    .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .add(jLabel2)))
+            .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                .add(layout.createSequentialGroup()
+                    .add(jLabel4)
+                    .add(97, 97, 97)
+                    .add(jLabel3))
+                .add(jButton2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 130, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+            .add(62, 62, 62))
+        .add(layout.createSequentialGroup()
+            .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
+                    .add(jScrollPane1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 583, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(layout.createSequentialGroup()
+                        .add(jCheckBox1)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(jComboBox1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 102, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(jLabel8))
+                        .add(18, 18, 18)
+                        .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(jLabel7)
+                            .add(jComboBox2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))
+                .add(jButton1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 163, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+            .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+    );
+    layout.setVerticalGroup(
+        layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+        .add(layout.createSequentialGroup()
+            .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                .add(jLabel7)
+                .add(jLabel8))
+            .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+            .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                .add(jComboBox1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 22, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(jComboBox2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 22, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(jCheckBox1))
+            .add(18, 18, 18)
+            .add(jScrollPane1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 192, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+            .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+            .add(jButton1)
+            .add(18, 18, 18)
+            .add(jSeparator1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+            .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+            .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                .add(jLabel1)
+                .add(jLabel2)
+                .add(jLabel4)
+                .add(jLabel3))
+            .add(6, 6, 6)
+            .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                .add(jLabel6)
+                .add(jLabel5)
+                .add(jButton2))
+            .addContainerGap())
+    );
+
+    pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(TontineUser.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(TontineUser.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(TontineUser.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(TontineUser.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                TontineUser ton = new TontineUser();
+                ton.setVisible(true);
+                try {
+                    Vector tontine = ton.getTontine();
+                } catch (Exception ex) {
+                    Logger.getLogger(TontineUser.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                
+            }
+        });
+        
+        
+    }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JComboBox jComboBox1;
+    private javax.swing.JComboBox jComboBox2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JTable jTable1;
+    // End of variables declaration//GEN-END:variables
+
+}
